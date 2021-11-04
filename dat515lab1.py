@@ -46,4 +46,3 @@ def build_tram_lines(txtfilename):
 
 
 
-build_tram_lines('/Users/erikredmo/Documents/GitHub/chalmers-advanced-python/labs/data/tramlines.txt')
