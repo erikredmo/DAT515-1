@@ -14,6 +14,8 @@ def build_tram_stops(jsonobject):
 
     return tram_stops
 
+
+
 def build_tram_lines(txtfilename):
     f = open(txtfilename)
     lines = f.readlines()
@@ -21,25 +23,27 @@ def build_tram_lines(txtfilename):
     lines_2 = []
     for i in lines:
         lines_2.append(i.strip('\n'))
-    lines_2.insert(0, '')
-    del lines_2[-1]
+    
     line_numbers = {}
     current_line = []
-    final_line_list = []
-#    print(lines_2)
-
     for i in range(len(lines_2)):
-        old_line_number = 0
-        if lines_2[i] == '':
-            line_number = lines_2[i+1][:-1]
-            line_numbers[old_line_number] = current_line[2:]
-            old_line_number = line_number
-            print(line_numbers)
- #           line_number = lines_2[i+1][:-1]
- #           print(str(int(line_number)))
+        if i == 0:
+            line_number = lines_2[i]
+        elif i == len(lines_2)-1:
+            line_numbers.setdefault(line_number, current_line[1:])
+            break
+        elif lines_2[i] == '':
+            line_numbers.setdefault(line_number, current_line[1:])
+            line_number = lines_2[i+1]
             current_line = []
-        current_line.append(lines_2[i][:-5].strip())
- #       print(line_number)
- #       print(current_line)
- #       print(line_numbers)
- #       print(current_line)
+        
+        else:
+            current_line.append(lines_2[i][:-5].strip())
+
+            
+    return line_numbers
+        
+
+
+
+build_tram_lines('/Users/erikredmo/Documents/GitHub/chalmers-advanced-python/labs/data/tramlines.txt')
