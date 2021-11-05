@@ -23,15 +23,18 @@ def build_tram_lines(txtfilename):
     lines_2 = []
     for i in lines:
         lines_2.append(i.strip('\n'))
+
+    
     
     line_numbers = {}
     current_line = []
     for i in range(len(lines_2)):
         if i == 0:
             line_number = lines_2[i]
+            current_line.append(lines_2[i][:-5].strip())
         elif i == len(lines_2)-1:
             line_numbers.setdefault(line_number, current_line[1:])
-            break
+#            break
         elif lines_2[i] == '':
             line_numbers.setdefault(line_number, current_line[1:])
             line_number = lines_2[i+1]
@@ -42,7 +45,8 @@ def build_tram_lines(txtfilename):
 
             
     return line_numbers
-        
+    
+print(build_tram_lines('/Users/erikredmo/Documents/GitHub/chalmers-advanced-python/labs/data/tramlines.txt'))
 
 
 
