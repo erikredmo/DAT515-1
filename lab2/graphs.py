@@ -19,25 +19,6 @@ class Graph:
 # such as a list of edges
         
         self._adjlist = Graph.edges2adjacency(edgelist)
-        self._edgelist = edgelist
-     
-
-  #  def edges2adjacency(edges):
-
- #       def add_edge_convert(adj,src,dst):
- #           if not src in adj:
- #               adj[src] = {dst}
- #           else:
- #               print(adj[src])
- #               adj[src].update({src:dst})
-                
-            
- #       adj = {}
- #       for (src,dst) in edges:
- #           add_edge_convert(adj, src, dst) #räcker att bara göra åt ena hållet?
- #           add_edge_convert(adj, dst, src)
-            
-#        return adj
 
     def edges2adjacency(edges):
 
@@ -51,45 +32,52 @@ class Graph:
         for (src,dst) in edges:
             add_edge(adj, src, dst)
             add_edge(adj, dst, src)
-    
+
         return adj
 
     def __len__(self):
         return len(self._adjlist)
     def add_edge(self, a, b):
-        '''
+        
         if a not in self._adjlist:
-            #if a
-            self._adjlist[a] = set() # The set() function creates a set object.
-        self._adjlist[a].add(b)
+            #self._adjlist[a] = set() # The set() function creates a set object.
+            self._adjlist[a] = [b]
+        else:
+            if b not in self._adjlist[a]:
+                self._adjlist[a].append(b)
         
         if b not in self._adjlist:
-            self._adjlist[b] = set()
-        self._adjlist[b].add(a)
+            #self._adjlist[b] = set()
+            self._adjlist[b] = [a]
+        else:
+            if a not in self._adjlist[b]:
+                self._adjlist[b].append(a)
         # The set add() method adds a given element to a set if the element is not present in the set.
-        '''
-        self._edgelist.append((a,b)) #update edgelist?
-        self._adjlist = Graph.edges2adjacency(self._edgelist)
+    
         
     
     def add_vertex(self, v):
         self._adjlist[v] = set()
     def edges(self):
-        return self._edgelist
+        new_edgelist = []
+        for key in self._adjlist:
+            for element in self._adjlist[key]:
+                new_edgelist.append((key, element))
+        return new_edgelist
     def get_vertex_value(self, v):
         index = list(self._valuelist.keys()).index(v)
         return list(self._adjlist.keys())[index]
     def neighbours(self, v):
-        return self._adjlist[v]
+        neighbour_list = []
+        for element in self._adjlist[v]:
+            neighbour_list.append(element[0])
+        return neighbour_list
+    
     def remove_edge(self, a, b):
-        
-        self._edjelist.remove((a,b))
-        
-
-        if a in self._adjlist:
-            if b in self._adjlist[a]:
-                pass
-
+        for i in range(len(self._adjlist)):
+            for j in range(len(self._adjlist[i])):
+                if self._adjlist[i] == a and self._adjlist[i][j][0] == b:
+                    self._adjlist[i][j].remove()
 
     def set_vertex_value(self, v, x):
         "destructive update of value"
@@ -106,13 +94,10 @@ class WeightedGraph(Graph):
         
     def get_weight(self, a, b):
         for element in self._adjlist[a]:
-            print(element)
             if element[0] == b:
                 return element[1]
 
     def set_weight(self, a, b, w):
-        print(self._adjlist)
-        print(a, b)
         self._adjlist[a][self._adjlist[a].index(b)] = (b, w)
 
 
@@ -175,20 +160,19 @@ def view_shortest(G, source, target, cost=lambda u,v: 1):
     print(colormap)
     visualize(G, view='view', nodecolors=colormap)
 
+
 def demo():
     edgelist_demo = [(1,2),(1,3),(1,4),(3,4),(3,5),(3,6),(3,7),(6,7)]
+
     G = WeightedGraph(edgelist_demo)
     c = 1
-    for i in edgelist_demo:
-        print(i)
-#        if i == range(len(edgelist_demo)):
-#            G.set_weight(edgelist_demo[i][1], edgelist_demo[i][0], c)
-#            break
-            
-#        G.set_weight(edgelist_demo[i][0], edgelist_demo[i][1], c)
-#        G.set_weight(edgelist_demo[i][1], edgelist_demo[i][0], c)
+    for i in range(len(edgelist_demo)):
+        G.set_weight(edgelist_demo[i][0], edgelist_demo[i][1], c)
+        G.set_weight(edgelist_demo[i][1], edgelist_demo[i][0], c)
 
         c += 1
+        
+    print(G._weightlist)
         
     view_shortest(G, 2, 6)
 
@@ -201,11 +185,10 @@ edges = [(1,2), (1,3), (2,4), (2,5), (3, 6), (3, 7), (7, 3)]
 def demo():
     T = Graph(edges)
     T.add_edge(1, 7)
-    #T.add_edge(1, 113)
-    #T.add_edge(11, 111)
+    T.add_edge(1, 8)
+    T.add_edge(2, 8)
     print(T._adjlist)
     visualize(T)
-    
+  '''  
 if __name__ == '__main__':
     demo()  
-'''
