@@ -55,9 +55,11 @@ class TramLine(TramNetwork):
     def stops(self):
         return self._stops
 
-
+"Its __init__() method needs the name as a required argument, whereas the"
+"position and line list are optional. " # vad ska man göra med de som är optional
 class TramStops(TramLine): #Kanske behövs arv från TramNetwork här också
-    def __init__(self, name, lines, lat, lon):
+
+    def __init__(self, name, lines=None, lat=None, lon=None):
         self._name = name
         self._lines = lines
         self._pos = (lat, lon)
@@ -73,7 +75,7 @@ class TramStops(TramLine): #Kanske behövs arv från TramNetwork här också
         self._pos = (lat, lon)
 
     
-TRAM_FILE = 'tramnetwork.json'
+TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork.json'
         
 "It should return an object of class ``TramNetwork`."
 def readTramNetwork(tramfile=TRAM_FILE):
@@ -104,12 +106,13 @@ def readTramNetwork(tramfile=TRAM_FILE):
     
     TramNetwork_obj = TramNetwork(TramLine_dict, TramStops_dict, timedict)
     
-    print(TramLine_dict, TramStops_dict)
+    print(TramLine_dict, TramStops_dict, timedict)
     
     return TramNetwork_obj
     
     
 readTramNetwork(TRAM_FILE)
 
+#print(TramStops.geo_distance(readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]]))
 
         
