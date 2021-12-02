@@ -20,42 +20,81 @@ class Graph:
         
         self._adjlist = Graph.edges2adjacency(edgelist)
 
+
     def edges2adjacency(edges):
 
+        '''
+
         def add_edge(adj,src,dst):
-            if not src in adj:
-                adj[src] = [dst]
+            if src in adj:
+                if dst not in adj[src]:
+                    
+            
+            if src not in adj:
+                if dst not in adj[src]:
+                    adj[src] = [dst]
+                
+            elif dst not in adj:
+                if src not in adj:
+                    adj[dst].append(src)
+
+                    
             else:
                 adj[src].append(dst)
+'''
 
+#        def add_edge(adj,src,dst):
+#            print(adj)
         adj = {}
         for (src,dst) in edges:
-            add_edge(adj, src, dst)
-            add_edge(adj, dst, src)
+            if src in adj:
+                if dst in adj[src]:
+                    continue
+                elif dst in adj:
+                    if src in adj[dst]:
+                        continue
+                    else:
+                        adj[dst].append(src)
+                else:
+                    adj[src].append(dst)
+            elif dst in adj:
+                if src in adj[dst]:
+                    continue
+                else: 
+                    adj[dst].append(src)
+            else:
+                adj[src] = [dst]
+                
+                
+                
+#        adj = {}
+#        for (src,dst) in edges:
+#            add_edge(adj, src, dst)
+#            add_edge(adj, dst, src)
 
         return adj
+    
+    
+    
+    
+
 
     def __len__(self):
         return len(self._adjlist)
+    
     def add_edge(self, a, b):
         
         if a not in self._adjlist:
-            #self._adjlist[a] = set() # The set() function creates a set object.
-            self._adjlist[a] = [b]
-        else:
-            if b not in self._adjlist[a]:
-                self._adjlist[a].append(b)
+            if b in self._adjlist:
+                if a not in self._adjlist[b]:
+                    self._adjlist[b].append(a)
+            else:
+                self._adjlist[a] = [b]
+                
+        elif b not in self._adjlist[a]:
+            self._adjlist[a].append(b)
+            
         
-        if b not in self._adjlist:
-            #self._adjlist[b] = set()
-            self._adjlist[b] = [a]
-        else:
-            if a not in self._adjlist[b]:
-                self._adjlist[b].append(a)
-        # The set add() method adds a given element to a set if the element is not present in the set.
-    
-        
-    
     def add_vertex(self, v):
         self._adjlist[v] = set()
     def edges(self):
@@ -68,10 +107,10 @@ class Graph:
         index = list(self._valuelist.keys()).index(v)
         return list(self._adjlist.keys())[index]
     def neighbours(self, v):
-        neighbour_list = []
-        for element in self._adjlist[v]:
-            neighbour_list.append(element[0])
-        return neighbour_list
+        #neighbour_list = []
+        #for element in self._adjlist[v]:
+        #    neighbour_list.append()
+        return self._adjlist[v]
     
     def remove_edge(self, a, b):
         for i in range(len(self._adjlist)):
@@ -89,22 +128,46 @@ class WeightedGraph(Graph):
     "If you use a native implementation, the simplest solution is probably to have a separate dictionary."
     
     def __init__(self, edgelist):
-        super().__init__(edgelist) #här skapas den vanliga graphen
-        self._weightlist = self._adjlist
+        #här skapas den vanliga graphen
+        super().__init__(edgelist) 
+#        self._weightlist = dict(self._adjlist)
+        self._weightlist = {}
+        for key in self._adjlist:
+            for value in self._adjlist[key]:
+                if key in self._weightlist:
+                    if value not in self._weightlist[key]:
+                        self._weightlist[key].update({value:0})
+                    else:
+                        continue
+                elif value in self._weightlist:
+                    if key not in self._weightlist[value]:
+                        self._weightlist[value].update({key:0})
+                else:
+                    self._weightlist[key] = {value:0}
+        
         
     def get_weight(self, a, b):
-        for element in self._adjlist[a]:
-            if element[0] == b:
-                return element[1]
+        return self._weightlist[a][b]
+        
+        
+     #   for element in self._weightlist[a]:
+     #       if element[0] == b:
+     #           return element[1]
 
     def set_weight(self, a, b, w):
-        self._adjlist[a][self._adjlist[a].index(b)] = (b, w)
+        self._weightlist[a][b] = w
+#        print(self._weightlist[a][self._weightlist[a].index(b)])# = (b, w)
+
 
 
 import sys
 
 def dijkstra(graph, source, cost=lambda u,v: 1):
+    
+    
+    print(graph._weightlist)
     unvisited_v = list(graph.vertices())
+    print(list(graph.vertices()))
     
     # We'll use this dict to save the cost of visiting each v and update it as we move along the graph   
     shortest_path = {}
@@ -130,8 +193,12 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
         
         # The code block below retrieves the current v's neighbors and updates their distances
         neighbours = graph.neighbours(current_min_v)
+        print(neighbours)
+        print(shortest_path)
         for neighbour in neighbours:
             prel_value = shortest_path[current_min_v] + graph.get_weight(current_min_v, neighbour)
+            print('prel', prel_value)
+            print(shortest_path[neighbour])
             if prel_value < shortest_path[neighbour]:
                 shortest_path[neighbour] = prel_value
                 # We also update the best path to the current v
@@ -141,12 +208,23 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
         unvisited_v.remove(current_min_v)
     
     return previous_v, shortest_path
-        
+
+"Make sure to return a dictionary, where the keys are all target vertices reachable"
+"from the source, and their values are paths from the source to the target "
+"(i.e. lists of vertices in the order that the shortest path traverses them)."
+
+
+
 
 import graphviz
 
 def visualize(graph): #, view='dot', name='mygraph', nodecolors={}, engine='dot'
     dot = graphviz.Graph(engine='dot')
+#    print(graph._weightlist)
+#    for node in graph._weightlist.keys():
+#        dot.node(str(node))
+#        for subnode in graph._weightlist[node]:
+#            dot.edge(str(node), str(subnode[0]))
     for v in graph.vertices():
         dot.node(str(v))
     for (a,b) in graph.edges():
@@ -162,17 +240,26 @@ def view_shortest(G, source, target, cost=lambda u,v: 1):
 
 
 def demo():
-    edgelist_demo = [(1,2),(1,3),(1,4),(3,4),(3,5),(3,6),(3,7),(6,7)]
+    edgelist_demo = [(1,2), (2,1),(1,3),(1,4),(3,4),(3,5),(3,6),(3,7),(6,7)]
+    
 
     G = WeightedGraph(edgelist_demo)
-    c = 1
-    for i in range(len(edgelist_demo)):
-        G.set_weight(edgelist_demo[i][0], edgelist_demo[i][1], c)
-        G.set_weight(edgelist_demo[i][1], edgelist_demo[i][0], c)
+    
+    G.add_edge(1,7)
+    G.add_edge(12,13)
+    
+    #c = 1
+    #for i in range(len(edgelist_demo)):
+    #    G.set_weight(edgelist_demo[i][0], edgelist_demo[i][1], c)
+    #    G.set_weight(edgelist_demo[i][1], edgelist_demo[i][0], c)
 
-        c += 1
+     #   c += 1
+     
+    G.set_weight(1, 2, 5)
         
-    print(G._weightlist)
+    print(G._adjlist)
+    
+    visualize(G)
         
     view_shortest(G, 2, 6)
 
@@ -189,6 +276,7 @@ def demo():
     T.add_edge(2, 8)
     print(T._adjlist)
     visualize(T)
-  '''  
+ 
 if __name__ == '__main__':
     demo()  
+'''
