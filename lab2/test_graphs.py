@@ -52,9 +52,9 @@ def test_neighbours(eds):
                 bv = True
         
         
-        #assert edge[0] in G.neighbours(edge[1]) and edge[1] in G.neighbours(edge[0])
+        assert edge[0] in G.neighbours(edge[1]) and edge[1] in G.neighbours(edge[0])
         
-        assert bv == True
+        #assert bv == True
 
 
 ################## WITH NETWORKX #########################
@@ -98,6 +98,6 @@ def test_neighbours_nx(eds):
 
 
 #test_edges_vertices()
-#test_neighbours()
+test_neighbours()
 test_edges_vertices_nx()
 test_neighbours_nx()

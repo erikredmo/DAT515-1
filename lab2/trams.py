@@ -31,15 +31,14 @@ class TramNetwork(WeightedGraph):
         return list(self._linedict.keys())
     def all_stops(self):
         return list(self._stopdict.keys()) 
-    def extreme_positions(self):
-        pass
     def geo_distance(self, stops, a,b):
         D = td.distance_between_stops(stops, a, b)
         return D
     def line_stops(self, line):
         return self._linedict[line].__dict__['_stops']
     def remove_lines(self, lines):
-        pass
+        self._linedict[lines].__dict__['_stops'].pop(lines)
+        
     def stop_lines(self, a): #list of lines via the stop
         return 
     def transition_time(self, a,b):
@@ -115,10 +114,14 @@ G = readTramNetwork(tramfile=TRAM_FILE)
 print(G.all_lines())
 print(G.all_stops())
 print(len(G.all_stops()))
+print(type(G._stopdict))
+#print(G.geo_distance(G._stopdict, 'Brunnsparken','Svingeln'))
 print('ETTANS: ', G.line_stops('1'))
 print('FEMMANS: ', G.line_stops('5'))
-print(type(G._stopdict))
-print(G.geo_distance(G._stopdict, 'Brunnsparken','Svingeln'))
+print(G._linedict, G._stopdict, G._timedict)
+
+print(G.remove_lines('2'))
+print(G.all_lines)
 
 
 
