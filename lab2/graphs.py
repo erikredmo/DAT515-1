@@ -6,6 +6,7 @@ Created on Fri Nov 26 10:18:45 2021
 @author: adinahellstrom
 """
 
+'''
 
 class Graph:
     def __init__(self, edgelist, start=None, values=None, directed=False):
@@ -23,7 +24,7 @@ class Graph:
 
     def edges2adjacency(edges):
 
-        '''
+        
 
         def add_edge(adj,src,dst):
             if src in adj:
@@ -41,7 +42,7 @@ class Graph:
                     
             else:
                 adj[src].append(dst)
-'''
+
 
 #        def add_edge(adj,src,dst):
 #            print(adj)
@@ -260,13 +261,15 @@ def demo():
     print(G._adjlist)
     
     visualize(G)
+    
+    print(G.edges())
         
     view_shortest(G, 2, 6)
 
 if __name__ == '__main__':
     demo()
 
-'''
+
 edges = [(1,2), (1,3), (2,4), (2,5), (3, 6), (3, 7), (7, 3)]
 
 def demo():
@@ -280,3 +283,204 @@ def demo():
 if __name__ == '__main__':
     demo()  
 '''
+
+class Graph:
+    def __init__(self, edgelist=None, start=None, values=None, directed=False):
+        self._edgelist = edgelist
+        self._adjlist = Graph.edges2adjacency(edgelist)
+        self._redadjlist = Graph.rededges2adjacency(edgelist)
+        if values is None:
+            values = {}
+        self._valuelist = values #values of nodes
+        self._isdirected = directed # False => undirected
+        
+# plus some code for building a graph from a ’start’ object
+# such as a list of edges
+
+# Gör om edges till adjacency list där varje nod är key och dess values dess kopplingar
+    def rededges2adjacency(edges):
+        adj = {}
+        for (src,dst) in edges:
+            if src in adj:
+                if dst not in adj[src]:
+                    adj[src].append(dst)
+                else:
+                    continue
+            elif dst in adj:
+                if src not in adj[dst]:
+                    adj[dst].append(src)
+            else:
+                adj[src] = [dst]
+                adj[dst] = [src]
+
+        return adj
+# Gör om edges till adjacency list utan redundans
+    def edges2adjacency(edges):
+        adj = {}
+        for (src,dst) in edges:
+            if src in adj:
+                if dst in adj[src]:
+                    continue
+                elif dst in adj:
+                    if src in adj[dst]:
+                        continue
+                    else:
+                        adj[dst].append(src)
+                else:
+                    adj[src].append(dst)
+            elif dst in adj:
+                if src in adj[dst]:
+                    continue
+                else: 
+                    adj[dst].append(src)
+            else:
+                adj[src] = [dst]
+                
+        return adj
+    
+    
+# Returnerar lista med grannar till nod v
+    def neighbours(self, v):
+        return self._redadjlist[v]
+# Returnerar lista av samtliga noder
+    def vertices(self):
+        return self._redadjlist.keys()
+# Returnerar kopplingar (edges)
+    def edges(self):
+        return self._edgelist
+#        new_edgelist = []
+#        for key in self._adjlist:
+#            for element in self._adjlist[key]:
+#                new_edgelist.append((key, element))
+#        return new_edgelist
+# Returnerar antalet noder
+    def __len__(self):
+        return len(self._redadjlist.keys())
+# Lägg till en nod    
+    def add_vertex(self, v):
+        self._adjlist.setdefault(v, [])
+        self._redadjlist.setdefault(v, [])
+#        self._adjlist[v] = set()
+# Lägg till en koppling (edge)
+    def add_edge(self, v1, v2):
+        # I _edgelist
+        if (v1,v2) not in self._edgelist:
+            if (v2,v1) not in self._edgelist:
+                self._edgelist.append((v1,v2))
+        # I _adjlist
+        if v1 not in self._adjlist:
+            if v2 in self._adjlist:
+                if v1 not in self._adjlist[v2]:
+                    self._adjlist[v2].append(v1)
+            else:
+                self._adjlist[v1] = [v2]
+        elif v2 not in self._adjlist[v1]:
+            self._adjlist[v1].append(v2)
+        # I _redadjlist
+        if v1 not in self._redadjlist:
+            self._redadjlist.setdefault(v1, [v2])
+        elif v2 not in self._redadjlist[v1]:
+            self._redadjlist[v1].append(v2)
+        if v2 not in self._redadjlist:
+            self._redadjlist.setdefault(v2, [v1])
+        elif v1 not in self._redadjlist[v2]:
+            self._redadjlist[v2].append(v1)
+# Ta bort en nod (vertex)
+    def remove_vertex(self, v):
+        # I _edgelist
+        for edge in self._edgelist:
+            if v in edge:
+                self._edgelist.remove(edge)
+        # I _adjlist
+        if v in self._adjlist:
+            del self._adjlist[v]
+        for node in self._adjlist:
+            if v in node:
+                self._adjlist[node].remove(v)
+        # I _redadjlist
+        if v in self._redadjlist:
+            del self._adjlist[v]
+        for node in self._redadjlist:
+            if v in node:
+                self._redadjlist[node].remove(v)
+# Tar bort edge
+    def remove_edge(self, v1, v2):
+        # I _edgelist
+        for edge in self._edgelist:
+            if edge == (v1,v2) or edge == (v2,v1):
+                self._edgelist.remove(edge)
+        # I _adjlist
+        for node in self._adjlist:
+            if node == v1:
+                if v2 in self._adjlist[node]:
+                    self._adjlist[node].remove(v2)
+            if node == v2:
+                if v1 in self._adjlist[node]:
+                    self._adjlist[node].remove(v1)
+        # I _redadjlist
+        for node in self._redadjlist:
+            if node == v1:
+                if v2 in self._redadjlist[node]:
+                    self.redadjlist[node].remove(v2)
+            if node == v2:
+                if v1 in self._redadjlist[node]:
+                    self._redadjlist[node].remove(v1)
+# Getter för edgelist
+    def get_edgelist(self):
+        return self._edgelist
+# Getter för adjlist
+    def get_adjlist(self):
+        return self._adjlist
+# Getter för redadjlist
+    def get_redadjlist(self):
+        return self._redadjlist
+# Getter för nodens namn?
+    def get_vertex_value(self, v):
+        index = list(self._valuelist.keys()).index(v)
+        return list(self._adjlist.keys())[index]
+# Setter för nodens namn?
+    def set_vertex_value(self, v, x):
+#        "destructive update of value"
+        self._valuelist[v] = x #we don't care about the old value
+
+
+class WeightedGraph(Graph):
+    def __init__(self, edgelist):
+        super().__init__(edgelist) 
+        self._weightlist = {}
+# Returnerar vikt för edge
+    def get_weight(self, v1, v2):
+        return self._weightlist[(v1,v2)]
+# Gör edge till key i weightlist och ger den värdet weight
+    def set_weight(self, v1, v2, w):
+        self._weightlist[(v1,v2)] = w
+
+def dijkstra(graph, source, cost=lambda u,v:1):   
+    pass
+
+
+import graphviz
+
+def visualize(graph):
+    dot = graphviz.Graph(engine='dot')
+    for v in graph.vertices():
+        dot.node(str(v))
+    for (a,b) in graph.edges():
+        dot.edge(str(a),str(b))
+    dot.render('mygraph.gv', view=True)
+
+
+def demo():
+    T = Graph([])
+    T.add_edge(1, 11)
+    T.add_edge(1, 12)
+    T.add_edge(11, 111)
+    T.add_edge(111, 11)
+    T.add_edge(11, 112)
+    T.add_edge(3, 4)
+    T.add_edge(11, 112)
+    print(T._redadjlist)
+    visualize(T)
+
+if __name__ == '__main__':
+    demo()

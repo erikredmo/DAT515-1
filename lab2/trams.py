@@ -36,8 +36,8 @@ class TramNetwork(WeightedGraph):
     def geo_distance(self, stops, a,b):
         D = td.distance_between_stops(stops, a, b)
         return D
-    def line_stops(self, line): 
-        return self._linedict[line]
+    def line_stops(self, line):
+        return self._linedict[line].__dict__['_stops']
     def remove_lines(self, lines):
         pass
     def stop_lines(self, a): #list of lines via the stop
@@ -85,24 +85,25 @@ def readTramNetwork(tramfile=TRAM_FILE):
     timedict = data['times']
     
     #print(linedict, stopdict, timedict)
-    
+
+    #namnet på hållplatsen är key, value: själva tramstop-objektet
     TramStops_dict = {}
-    
     for stop in stopdict:
         lines_via_stop_list = []
         for line in linedict:
             if stop in linedict[line]:
                 lines_via_stop_list.append(line)
         TramStop_obj = TramStops(stop, lines_via_stop_list, stopdict[stop]['lat'], stopdict[stop]['lon'])
-        TramStops_dict[TramStop_obj.get_name()] = TramStop_obj.get_position()
+        TramStops_dict[TramStop_obj.get_name()] = TramStop_obj
     
-    
+    #numret på linjen är key, value: själva tramline-objektet
     TramLine_dict = {}
     for line in linedict:
         TramLine_obj = TramLine(line, linedict[line])
-        TramLine_dict[TramLine_obj.get_number()] = TramLine_obj.stops()
+        TramLine_dict[TramLine_obj.get_number()] = TramLine_obj
+        
     
-    
+    # bygger hela TramNetwork-objektet
     TramNetwork_obj = TramNetwork(TramLine_dict, TramStops_dict, timedict)
 
     
@@ -110,20 +111,27 @@ def readTramNetwork(tramfile=TRAM_FILE):
 
 G = readTramNetwork(tramfile=TRAM_FILE)
 
-print(G.__dict__)
-print(G.line_stops('1'))
-print(G.geo_distance(G._stopdict, 
+#print(G.__dict__)
+print(G.all_lines())
+print(G.all_stops())
+print(len(G.all_stops()))
+print('ETTANS: ', G.line_stops('1'))
+print('FEMMANS: ', G.line_stops('5'))
+print(type(G._stopdict))
+print(G.geo_distance(G._stopdict, 'Brunnsparken','Svingeln'))
+
+
+
 
     
 readTramNetwork(TRAM_FILE)
 
-#print(TramStops.geo_distance(readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]]))
 
 '''
     def demo():
         G = readTramNetwork()
         a, b = input('from,to ').split(',')
-        gr.view_shortest(G, a, b)
+        graphs.view_shortest(G, a, b)
 
     if __name__ == '__main__':
         demo()
