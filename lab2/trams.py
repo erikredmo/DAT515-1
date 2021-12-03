@@ -36,12 +36,12 @@ class TramNetwork(WeightedGraph):
     def geo_distance(self, stops, a,b):
         D = td.distance_between_stops(stops, a, b)
         return D
-    def line_stops(self, line):
+    def line_stops(self, line): 
         return self._linedict[line]
     def remove_lines(self, lines):
         pass
-    def stop_lines(self, a):
-        pass
+    def stop_lines(self, a): #list of lines via the stop
+        return 
     def transition_time(self, a,b):
         pass
 
@@ -56,9 +56,8 @@ class TramLine(TramNetwork):
         return self._stops
 
 "Its __init__() method needs the name as a required argument, whereas the"
-"position and line list are optional. " # vad ska man göra med de som är optional
-class TramStops(TramLine): #Kanske behövs arv från TramNetwork här också
-
+"position and line list are optional. " # vad ska man göra med de som är optional?
+class TramStops(TramLine): #Kanske behövs arv från TramNetwork här också?
     def __init__(self, name, lines=None, lat=None, lon=None):
         self._name = name
         self._lines = lines
@@ -105,14 +104,27 @@ def readTramNetwork(tramfile=TRAM_FILE):
     
     
     TramNetwork_obj = TramNetwork(TramLine_dict, TramStops_dict, timedict)
-    
-    print(TramLine_dict, TramStops_dict, timedict)
+
     
     return TramNetwork_obj
-    
+
+G = readTramNetwork(tramfile=TRAM_FILE)
+
+print(G.__dict__)
+print(G.line_stops('1'))
+print(G.geo_distance(G._stopdict, 
+
     
 readTramNetwork(TRAM_FILE)
 
 #print(TramStops.geo_distance(readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]], readTramNetwork(tramfile=TRAM_FILE)[TramStops_dict[a]]))
 
-        
+'''
+    def demo():
+        G = readTramNetwork()
+        a, b = input('from,to ').split(',')
+        gr.view_shortest(G, a, b)
+
+    if __name__ == '__main__':
+        demo()
+'''   
