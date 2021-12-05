@@ -59,14 +59,29 @@ def test_neighbours(eds):
 
 ################## WITH NETWORKX #########################
 
+import random
 " shortest path algorithm "
-#@given(st_edge_list)
-#def test_shortest_path_algoritm(eds):
-#    G1 = Graph(eds)
-#    G2 = nx.Graph()
-#    for edge in eds:
-#        G2.add_edge(edge)
-#    assert G1.dijkstra() == G2.shortest_pah()
+@given(st_edge_list)
+def test_shortest_path_algoritm(eds):
+    if len(eds) == 0:
+        print('eds is empty')
+    #G1 = Graph(eds)
+    G1_w = WeightedGraph(eds)
+    for edge in eds:
+        G1_w.set_weight(edge[0], edge[1], 1)
+    
+    
+    G2 = nx.Graph()
+    for edge in eds:
+        G2.add_edge(edge[0], edge[1], weight=1)
+    
+    source = eds[0][0]
+    target = eds[-1][-1]
+    print('source', source, 'target', target)
+    print(eds)
+    print(dijkstra(G1_w, source)[target])
+    
+    assert dijkstra(G1_w, source)[target] == nx.dijkstra_path(G2, source, target, weight=1)
 
 
 @given(st_edge_list)
@@ -93,11 +108,9 @@ def test_neighbours_nx(eds):
         assert edge[0] in G1.neighbours(edge[1]) == edge[0] in nx.neighbors(G2, edge[0]) and edge[1] in G1.neighbours(edge[0]) == edge[0] in nx.neighbors(G2, edge[1])
         
         
-#if __name__ == '__main__':
-#    unittest.main()
-
 
 #test_edges_vertices()
+test_shortest_path_algoritm()
 test_neighbours()
 test_edges_vertices_nx()
 test_neighbours_nx()

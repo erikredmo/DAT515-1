@@ -13,7 +13,6 @@ sys.path.append('../lab1/')
 import tramdata as td
 
 
-
 "Objects of your own class can be included in dictionaries and arrays "
 "like any other built-in data type in python. In this case, we want a"
 "dictionary of objects of class TramStop and a dictionary of objects of class TramLine"
@@ -23,26 +22,49 @@ import tramdata as td
 class TramNetwork(WeightedGraph):
     
     def __init__(self, lines, stops, times):
+        
         self._linedict = lines
         self._stopdict = stops
         self._timedict = times
-        pass
+        
+        edges = []
+        
+        for key in self._timedict.keys():
+            for key2 in self._timedict[key].keys():
+                if (key,key2) not in edges:
+                    if (key2,key) not in edges:
+                        edges.append((key,key2))
+                        
+                
+        print(edges)
+    
+        super().__init__(edges)
+        for key in self._timedict.keys():
+            for key2 in self._timedict[key].keys():
+                super().set_weight(key,key2,self._timedict[key][key2])
+                print(key,key2,self._timedict[key][key2])
+        
+        
+        
     def all_lines(self):
         return list(self._linedict.keys())
     def all_stops(self):
         return list(self._stopdict.keys()) 
     def geo_distance(self, stops, a,b):
-        D = td.distance_between_stops(stops, a, b)
+        
+        stopdict_new = {}
+        for stop in self._stopdict:
+            stopdict_new[stop] = {'lat' : self._stopdict[stop].get_position()[0], 'lon' : self._stopdict[stop].get_position()[1]}
+        D = td.distance_between_stops(stopdict_new, a, b)
         return D
     def line_stops(self, line):
         return self._linedict[line].__dict__['_stops']
     def remove_lines(self, lines):
-        self._linedict[lines].__dict__['_stops'].pop(lines)
-        
+        self._linedict.pop(lines)
     def stop_lines(self, a): #list of lines via the stop
-        return 
+        return self._stopdict[a].get_lines()
     def transition_time(self, a,b):
-        pass
+        return self._timedict[a][b]
 
 
 class TramLine(TramNetwork):
@@ -83,6 +105,8 @@ def readTramNetwork(tramfile=TRAM_FILE):
     stopdict = data['stops']
     timedict = data['times']
     
+    
+    
     #print(linedict, stopdict, timedict)
 
     #namnet på hållplatsen är key, value: själva tramstop-objektet
@@ -104,38 +128,41 @@ def readTramNetwork(tramfile=TRAM_FILE):
     
     # bygger hela TramNetwork-objektet
     TramNetwork_obj = TramNetwork(TramLine_dict, TramStops_dict, timedict)
-
+    
     
     return TramNetwork_obj
 
-G = readTramNetwork(tramfile=TRAM_FILE)
-
-#print(G.__dict__)
-print(G.all_lines())
-print(G.all_stops())
-print(len(G.all_stops()))
-print(type(G._stopdict))
-#print(G.geo_distance(G._stopdict, 'Brunnsparken','Svingeln'))
-print('ETTANS: ', G.line_stops('1'))
-print('FEMMANS: ', G.line_stops('5'))
-print(G._linedict, G._stopdict, G._timedict)
-
-print(G.remove_lines('2'))
-print(G.all_lines)
-
-
-
-
     
-readTramNetwork(TRAM_FILE)
 
 
-'''
-    def demo():
-        G = readTramNetwork()
-        a, b = input('from,to ').split(',')
-        graphs.view_shortest(G, a, b)
+def demo():
+    G = readTramNetwork(tramfile=TRAM_FILE)
+    print(G._weightlist)
+    visualize(G)
+    a, b = input('from,to ').split(',')
+    view_shortest(G, a, b)
+    
+    
+#    print(G.__dict__)
+#    print(G.all_lines())
+#    print(G.all_stops())
+#    print(len(G.all_stops()))
+#    print(G.geo_distance(G._stopdict, 'Brunnsparken','Östra Sjukhuset'))
+#    print(G.geo_distance(G._stopdict, 'Brunnsparken','Lilla Bommen'))
+#    print('ETTANS: ', G.line_stops('1'))
+#    print('FEMMANS: ', G.line_stops('5'))
+#    G.remove_lines('2')
+#    print(G.all_lines())
+#    print(G._stopdict['Sälöfjordsgatan'].get_name())
+#    print(G.transition_time('Brunnsparken', 'Stenpiren'))
+#    print(G.stop_lines('Stenpiren'))
 
-    if __name__ == '__main__':
-        demo()
-'''   
+if __name__ == '__main__':
+    demo()
+    
+    
+    
+    
+    
+    
+    
