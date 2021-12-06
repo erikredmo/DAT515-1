@@ -13,6 +13,9 @@ sys.path.append('../lab1/')
 import tramdata as td
 
 
+TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork.json'
+
+
 "Objects of your own class can be included in dictionaries and arrays "
 "like any other built-in data type in python. In this case, we want a"
 "dictionary of objects of class TramStop and a dictionary of objects of class TramLine"
@@ -36,13 +39,13 @@ class TramNetwork(WeightedGraph):
                         edges.append((key,key2))
                         
                 
-        print(edges)
+        #print(edges)
     
         super().__init__(edges)
         for key in self._timedict.keys():
             for key2 in self._timedict[key].keys():
                 super().set_weight(key,key2,self._timedict[key][key2])
-                print(key,key2,self._timedict[key][key2])
+                #print(key,key2,self._timedict[key][key2])
         
         
         
@@ -95,7 +98,6 @@ class TramStops(TramLine): #Kanske behövs arv från TramNetwork här också?
         self._pos = (lat, lon)
 
     
-TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork.json'
         
 "It should return an object of class ``TramNetwork`."
 def readTramNetwork(tramfile=TRAM_FILE):
@@ -137,7 +139,7 @@ def readTramNetwork(tramfile=TRAM_FILE):
 
 def demo():
     G = readTramNetwork(tramfile=TRAM_FILE)
-    print(G._weightlist)
+    #print(G._weightlist)
     visualize(G)
     a, b = input('from,to ').split(',')
     view_shortest(G, a, b)
