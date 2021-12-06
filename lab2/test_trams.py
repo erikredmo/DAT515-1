@@ -20,7 +20,7 @@ import collections as co
 "You can try to generate data for them from the stop and line lists by using hypothesis."
 
 
-TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork.json'
+TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork_new.json'
 
 
 with open(TRAM_FILE) as trams:
@@ -44,13 +44,13 @@ def test_lines_included(line):
     
     assert line in TNW.all_lines()
 
-#st_two_stops = st.tuples(sorted(stopdict.keys()), sorted(stopdict.keys()))
-st_two_stops = (st.sampled_from(sorted(stopdict.keys())), st.sampled_from(sorted(stopdict.keys())))
+
+st_two_stops = st.tuples(st.sampled_from(list(stopdict.keys())), st.sampled_from(list(stopdict.keys())))
 @given(st_two_stops)
-def test_feasible_distance(two_stops):
+def test_feasible_distance(st_two_stops):
+    print(st_two_stops)
     TNW = readTramNetwork(TRAM_FILE)
-    D = TNW.geo_distance(stopdict, two_stops[0], two_stops[1])
-    
+    D = TNW.geo_distance(stopdict, st_two_stops[0], st_two_stops[1])
     assert D <= 20000
 
 def BFS(G, node, goal=lambda n: False):
@@ -60,8 +60,8 @@ def BFS(G, node, goal=lambda n: False):
     while Q:
         v = Q.popleft()
         if goal(v):
-            return v # nås aldrig pga False ?
-        for w in G.neighbours(v): #successors != neighbours ?
+            return v 
+        for w in G.neighbours(v): #successors == neighbours
             if w not in explored:
                 explored.append(w)
                 Q.append(w)
@@ -71,19 +71,23 @@ st_a_stop = st.sampled_from(sorted(stopdict.keys()))
 @given(st_a_stop)
 def test_connectedness(root_stop):
     TNW = readTramNetwork(TRAM_FILE)
-    print(TNW.all_stops())
-    print(len(TNW.all_stops()))
-    print(root_stop)
+    print('TNW.all_stops()', TNW.all_stops())
+    print('len TNM', len(TNW.all_stops()))
+    print('root', root_stop)
     explored = BFS(TNW, root_stop)
-    print(sorted(explored))
-    print(len(explored))
+    print('explored', sorted(explored))
+    print('len explored', len(explored))
     
-    assert sorted(explored) == sorted(stopdict)
+    for stop in explored:
+        if stop not in TNW.all_stops():
+            print(stop)
+    
+    assert sorted(explored) == sorted(stopdict.keys())
     
 
 
 test_stops_exist()
 test_lines_included()
-#test_feasible_distance()
+test_feasible_distance()
 test_connectedness()
     

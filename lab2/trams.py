@@ -13,7 +13,7 @@ sys.path.append('../lab1/')
 import tramdata as td
 
 
-TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork.json'
+TRAM_FILE = '/Users/adinahellstrom/Documents/GitHub/DAT515/labb1/tramnetwork_new.json'
 
 
 "Objects of your own class can be included in dictionaries and arrays "
@@ -38,14 +38,12 @@ class TramNetwork(WeightedGraph):
                     if (key2,key) not in edges:
                         edges.append((key,key2))
                         
-                
-        #print(edges)
+
     
         super().__init__(edges)
         for key in self._timedict.keys():
             for key2 in self._timedict[key].keys():
                 super().set_weight(key,key2,self._timedict[key][key2])
-                #print(key,key2,self._timedict[key][key2])
         
         
         
@@ -64,7 +62,7 @@ class TramNetwork(WeightedGraph):
         return self._linedict[line].__dict__['_stops']
     def remove_lines(self, lines):
         self._linedict.pop(lines)
-    def stop_lines(self, a): #list of lines via the stop
+    def stop_lines(self, a): 
         return self._stopdict[a].get_lines()
     def transition_time(self, a,b):
         return self._timedict[a][b]
@@ -106,10 +104,6 @@ def readTramNetwork(tramfile=TRAM_FILE):
     linedict = data['lines']
     stopdict = data['stops']
     timedict = data['times']
-    
-    
-    
-    #print(linedict, stopdict, timedict)
 
     #namnet på hållplatsen är key, value: själva tramstop-objektet
     TramStops_dict = {}
@@ -135,35 +129,17 @@ def readTramNetwork(tramfile=TRAM_FILE):
     return TramNetwork_obj
 
     
-
-
+    
 def demo():
-    G = readTramNetwork(tramfile=TRAM_FILE)
-    #print(G._weightlist)
-    visualize(G)
+    G = readTramNetwork()
     a, b = input('from,to ').split(',')
     view_shortest(G, a, b)
-    
-    
-#    print(G.__dict__)
-#    print(G.all_lines())
-#    print(G.all_stops())
-#    print(len(G.all_stops()))
-#    print(G.geo_distance(G._stopdict, 'Brunnsparken','Östra Sjukhuset'))
-#    print(G.geo_distance(G._stopdict, 'Brunnsparken','Lilla Bommen'))
-#    print('ETTANS: ', G.line_stops('1'))
-#    print('FEMMANS: ', G.line_stops('5'))
-#    G.remove_lines('2')
-#    print(G.all_lines())
-#    print(G._stopdict['Sälöfjordsgatan'].get_name())
-#    print(G.transition_time('Brunnsparken', 'Stenpiren'))
-#    print(G.stop_lines('Stenpiren'))
+    print('ALL STOPS', G.all_stops())
+    print('LEN ALL STOPS', len(G.all_stops()))
 
 if __name__ == '__main__':
     demo()
-    
-    
-    
+
     
     
     
