@@ -1,0 +1,5 @@
+Good job! Almost everything works as intended, although you could do some things more efficiently. For instance, you could use the add_edge method when initialising your Graph class, fewer lines of code is always nicer to read. Tests also look good, although you do fail some of the annoying corner cases but it's fine as is.
+
+The only thing that I ask that you fix is making Dijkstra work for non-weighted graphs. When I paste Aarne's demo into your code, it doesn't work since the example is not weighted and in dijkstraloop you are calling get_weight. Keep in mind that the default cost function should be cost=lambda u,v: 1 as well.
+
+Solve that and I will give you the full 14 points :)
