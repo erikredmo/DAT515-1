@@ -94,7 +94,27 @@ def show_shortest(dep, dest):
     network_time = readTramNetwork()
     network_distance = readTramNetwork()
     w_time_to_distance(network_distance)
-    #network_distance = w_time_to_distance(network_to_change)
+    
+    
+    # BONUS PART 1
+    vertices = []
+    for stop in network_time._stopdict:
+        lines = stop.get_lines()
+        for line in lines:
+            vertices.append((stop, line))
+    
+    edgelist = []
+    for edge in network_time.edges():
+        if edge[0] in edge[0].get_lines() and edge[1] in edge[1].get_lines():
+            edgelist.append(())
+        
+    
+    extra_graph = WeightedGraph(edgelist)
+    
+    
+    
+    
+
     
     print(network_time.get_weight('Chalmers', 'Kapellplatsen'))
     print(network_distance.get_weight('Chalmers', 'Kapellplatsen'))
@@ -128,11 +148,11 @@ def show_shortest(dep, dest):
         if stop in shortest_path:
             color = 'orange'
         
-        #if stop in quickest_path:
-        #    color = 'green'
+        if stop in quickest_path:
+            color = 'green'
             
-        #if stop in quickest_path and stop in shortest_path:
-        #    color = 'cyan'
+        if stop in quickest_path and stop in shortest_path:
+            color = 'cyan'
         return color
     
     
