@@ -177,21 +177,23 @@ class WeightedGraph(Graph):
         self._weightlist[(v1,v2)] = w
         self._weightlist[(v2,v1)] = w
 
-def dijkstra(graph, source, cost=lambda u,v:float('inf')):
+def dijkstra(graph, source, cost=lambda u,v: 1):
     visited = []
     shortest_from_source_dict = {}
     path = {}
     for vertex in graph.vertices():
-        shortest_from_source_dict[vertex] = cost(source, vertex)
+        shortest_from_source_dict[vertex] = float('inf')
         path[vertex] = []
     shortest_from_source_dict[source] = 0
-    
-   
+
     def dijkstraloop(source):
         should_do_loop = True
         for neighbour in graph._redadjlist[source]:
             if neighbour not in visited:
-                neighbour_cost = shortest_from_source_dict[source] + graph.get_weight(source, neighbour)
+                if type(graph) == WeightedGraph:
+                    neighbour_cost = shortest_from_source_dict[source] + graph.get_weight(source, neighbour)
+                else:
+                    neighbour_cost = shortest_from_source_dict[source] + cost(source, neighbour)
                 if neighbour_cost < shortest_from_source_dict[neighbour]:
                     shortest_from_source_dict[neighbour] = neighbour_cost
                     prev_path = path[source]
@@ -214,7 +216,6 @@ def dijkstra(graph, source, cost=lambda u,v:float('inf')):
  
         if len(visited) == len(graph.vertices()):
             should_do_loop = False
-            print('VISITED', visited)
             return path
         else:
             shortest_from_source_dict.pop(source)
@@ -222,6 +223,7 @@ def dijkstra(graph, source, cost=lambda u,v:float('inf')):
             min_from_source = list(shortest_from_source_dict.keys())[min_value_index]
             if should_do_loop == True:
                 return dijkstraloop(min_from_source)
+ 
     return dijkstraloop(source)
 
 

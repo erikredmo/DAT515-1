@@ -71,9 +71,29 @@ def build_tram_lines(txtfilename):
 
 def build_tram_network(jsonfile, txtfile):
     
+    
+    
     data = {'stops': build_tram_stops(jsonfile), 'lines': build_tram_lines(txtfile)[0], 'times': build_tram_lines(txtfile)[1]}
     
+
+    for key in data['stops']:
+        if key == 'Januarigatanc2':
+            data['stops'].pop(key, None)
+            
+    for key in data['lines']:
+        if 'Januarigatanc2' in key:
+            data['lines'][key].remove('Januarigatanc2')
+                
     
+    for key in data['times']:
+        if key == 'Januarigatanc2':
+            data['times'].pop(key, None)
+        for key2 in key:
+            if key2 == 'Januarigatanc2':
+                data['times'][key].pop(key2, None)
+
+
+
     with open('tramnetwork.json', 'w') as f:
         json.dump(data, f)
     
@@ -183,7 +203,19 @@ def distance_between_stops(stop_dict, stop1, stop2):
     
     return D
 
+def distance_between_stops2(stop_dict, stop1, stop2):
 
+    
+    delta_lat = abs(lonlat_to_rad(float(stop_dict[stop1].get_position()[0])) - lonlat_to_rad(float(stop_dict[stop2].get_position()[0])))
+    delta_lon = abs(lonlat_to_rad(float(stop_dict[stop1].get_position()[1])) - lonlat_to_rad(float(stop_dict[stop2].get_position()[1])))
+    mean_lat = (lonlat_to_rad(float(stop_dict[stop1].get_position()[0])) + lonlat_to_rad(float(stop_dict[stop2].get_position()[0])))/ 2
+    
+    
+    R = 6371009
+    
+    D = R * math.sqrt((delta_lat)**2 + (math.cos(mean_lat)*delta_lon)**2)
+    
+    return D
 
 def dialogue(jsonfile):
 
@@ -328,7 +360,7 @@ import sys
 
 if __name__ == '__main__':
     if sys.argv[1:] == ['init']:
-        build_tram_network('data/tramstops.json', 'data/tramlines.txt')
+        build_tram_network('tramstops.json', 'tramlines.txt')
     else:
         dialogue('tramnetwork.json')
         

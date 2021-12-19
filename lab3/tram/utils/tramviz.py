@@ -1,6 +1,7 @@
 # baseline tram visualization for Lab 3, modified to work with Django
 
 from .trams import readTramNetwork
+from .trams import TramNetwork
 from .graphs import dijkstra
 import graphviz
 import json
@@ -74,30 +75,32 @@ def network_graphviz(network, outfile, colors=None, positions=scaled_position):
     with open(outfile, 'w') as file:
         file.write(s)
 
-def colors(stop):
-#    if stop
-    pass
 
+'''
 from bs4 import BeautifulSoup
 import urllib.request
 
 def extracting_gids():
-    with open("hallplatslista.html") as fp:
+    with open('hallplatslista.html') as fp:
         soup = BeautifulSoup(fp, 'html.parser')
     
-    data = soup.find_all("span", { "class":"" })
+    data = soup.find_all('li', { 'class':'mb-1'})
     numbers = [d.text for d in data]
-
-    
+'''
     
 
 def show_shortest(dep, dest):
     # TODO: uncomment this when it works with your own code
-    network = readTramNetwork()
+    network_time = readTramNetwork()
+    network_to_change = readTramNetwork()
+    network_distance = network_to_change.w_time_to_distance(network_to_change)
+    
+    
+    
 
     # TODO: replace this mock-up with actual computation using dijkstra
-    timepath = 'The quickest route from ' + dep + ' to ' + dest
-    geopath = 'The shortest route from ' + dep + ' to ' + dest
+    quickest_path = 'The quickest route from ' + dep + ' to ' + dest
+    shortest_path = 'The shortest route from ' + dep + ' to ' + dest
 
     # TODO: run this with the shortest-path colors to update the svg image
     
@@ -105,10 +108,26 @@ def show_shortest(dep, dest):
     #orange for stops on quickest path
     #cyan for stops that are on both paths
     
-    colors = lambda stop: 'orange' if stop[0] == 'C' else 'white'
-    network_graphviz(network, SHORTEST_PATH_SVG, colors=colors)
+    #TIME NETWORK
+    
+    quickest_path = dijkstra(network_time, dep)[dest]
+    quickest_path.append(dest)
+    
+    
+    #DISTANCE NETWORK
+    shortest_path = dijkstra(network_distance, dep)[dest]
+    shortest_path.append(dest)
+    
+    
+    # COLORS
+    colors = lambda stop: 'orange' if stop in quickest_path else ('green' if stop in shortest_path else 'white')
+    
+    
+    
+    network_graphviz(network_time, SHORTEST_PATH_SVG, colors=colors)
+    
     #parameter colors in network_graphviz should be a function that we create which returns the correct color for each stop
     
-    return timepath, geopath
+    return quickest_path, shortest_path
 
 

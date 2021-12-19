@@ -5,7 +5,9 @@ import math
 import os
 from .graphs import WeightedGraph
 from django.conf import settings
+from .tramdata import distance_between_stops2
 from .tramdata import distance_between_stops
+
 
 
 # path changed from Lab2 version
@@ -71,6 +73,11 @@ class TramNetwork(WeightedGraph):
         
         return minlon, minlat, maxlon, maxlat
 
+
+    def w_time_to_distance(self, network):
+        for key in network._timedict.keys():
+                for key2 in self._timedict[key].keys():
+                    super().set_weight(key,key2, distance_between_stops2(self._stopdict, key, key2))
 
 class TramLine(TramNetwork):
     def __init__(self, num, stops):
