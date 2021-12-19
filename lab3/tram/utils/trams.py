@@ -74,10 +74,7 @@ class TramNetwork(WeightedGraph):
         return minlon, minlat, maxlon, maxlat
 
 
-    def w_time_to_distance(self, network):
-        for key in network._timedict.keys():
-                for key2 in self._timedict[key].keys():
-                    super().set_weight(key,key2, distance_between_stops2(self._stopdict, key, key2))
+
 
 class TramLine(TramNetwork):
     def __init__(self, num, stops):
@@ -141,6 +138,11 @@ def readTramNetwork(tramfile=TRAM_FILE):
     
     
     return TramNetwork_obj
+
+def w_time_to_distance(network):
+    for key in network._timedict.keys():
+        for key2 in network._timedict[key].keys():
+            network.set_weight(key,key2, distance_between_stops2(network._stopdict, key, key2))
 
 
 # Bonus task 1: take changes into account and show used tram lines

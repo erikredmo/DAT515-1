@@ -1,7 +1,7 @@
 # baseline tram visualization for Lab 3, modified to work with Django
 
 from .trams import readTramNetwork
-from .trams import TramNetwork
+from .trams import w_time_to_distance
 from .graphs import dijkstra
 import graphviz
 import json
@@ -92,10 +92,12 @@ def extracting_gids():
 def show_shortest(dep, dest):
     # TODO: uncomment this when it works with your own code
     network_time = readTramNetwork()
-    network_to_change = readTramNetwork()
-    network_distance = network_to_change.w_time_to_distance(network_to_change)
+    network_distance = readTramNetwork()
+    w_time_to_distance(network_distance)
+    #network_distance = w_time_to_distance(network_to_change)
     
-    
+    print(network_time.get_weight('Chalmers', 'Kapellplatsen'))
+    print(network_distance.get_weight('Chalmers', 'Kapellplatsen'))
     
 
     # TODO: replace this mock-up with actual computation using dijkstra
@@ -120,8 +122,18 @@ def show_shortest(dep, dest):
     
     
     # COLORS
-    colors = lambda stop: 'orange' if stop in quickest_path else ('green' if stop in shortest_path else 'white')
     
+    def colors(stop):
+        color = 'white'
+        if stop in shortest_path:
+            color = 'orange'
+        
+        #if stop in quickest_path:
+        #    color = 'green'
+            
+        #if stop in quickest_path and stop in shortest_path:
+        #    color = 'cyan'
+        return color
     
     
     network_graphviz(network_time, SHORTEST_PATH_SVG, colors=colors)
