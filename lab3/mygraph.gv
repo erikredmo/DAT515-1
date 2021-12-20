@@ -1,0 +1,1527 @@
+graph {
+	"('Allhelgonakyrkan', '11')" [color=orange]
+	"('Allhelgonakyrkan', '6')" [color=orange]
+	"('Allhelgonakyrkan', '7')" [color=orange]
+	"('Almedal', '2')" [color=orange]
+	"('Almedal', '4')" [color=orange]
+	"('Angered Centrum', '4')" [color=orange]
+	"('Angered Centrum', '8')" [color=orange]
+	"('Angered Centrum', '9')" [color=orange]
+	"('Aprilgatan', '6')" [color=orange]
+	"('Axel Dahlströms Torg', '1')" [color=orange]
+	"('Axel Dahlströms Torg', '2')" [color=orange]
+	"('Axel Dahlströms Torg', '7')" [color=orange]
+	"('Axel Dahlströms Torg', '8')" [color=orange]
+	"('Bellevue', '11')" [color=orange]
+	"('Bellevue', '6')" [color=orange]
+	"('Bellevue', '7')" [color=orange]
+	"('Berzeliigatan', '4')" [color=orange]
+	"('Berzeliigatan', '5')" [color=orange]
+	"('Beväringsgatan', '11')" [color=orange]
+	"('Beväringsgatan', '6')" [color=orange]
+	"('Beväringsgatan', '7')" [color=orange]
+	"('Bokekullsgatan', '3')" [color=orange]
+	"('Botaniska Trädgården', '1')" [color=orange]
+	"('Botaniska Trädgården', '13')" [color=orange]
+	"('Botaniska Trädgården', '2')" [color=orange]
+	"('Botaniska Trädgården', '7')" [color=orange]
+	"('Botaniska Trädgården', '8')" [color=orange]
+	"('Briljantgatan', '1')" [color=orange]
+	"('Briljantgatan', '7')" [color=orange]
+	"('Brunnsgatan', '2')" [color=orange]
+	"('Brunnsparken', '1')" [color=orange]
+	"('Brunnsparken', '10')" [color=orange]
+	"('Brunnsparken', '11')" [color=orange]
+	"('Brunnsparken', '2')" [color=orange]
+	"('Brunnsparken', '3')" [color=orange]
+	"('Brunnsparken', '4')" [color=orange]
+	"('Brunnsparken', '5')" [color=orange]
+	"('Brunnsparken', '6')" [color=orange]
+	"('Brunnsparken', '7')" [color=orange]
+	"('Brunnsparken', '9')" [color=orange]
+	"('Bäckeliden', '5')" [color=orange]
+	"('Bögatan', '5')" [color=orange]
+	"('Centralstationen', '1')" [color=orange]
+	"('Centralstationen', '10')" [color=orange]
+	"('Centralstationen', '11')" [color=orange]
+	"('Centralstationen', '13')" [color=orange]
+	"('Centralstationen', '2')" [color=orange]
+	"('Centralstationen', '3')" [color=orange]
+	"('Centralstationen', '4')" [color=orange]
+	"('Centralstationen', '7')" [color=orange]
+	"('Centralstationen', '9')" [color=orange]
+	"('Chalmers', '10')" [color=orange]
+	"('Chalmers', '13')" [color=orange]
+	"('Chalmers', '6')" [color=orange]
+	"('Chalmers', '7')" [color=orange]
+	"('Chalmers', '8')" [color=orange]
+	"('Chapmans Torg', '3')" [color=orange]
+	"('Chapmans Torg', '9')" [color=orange]
+	"('Doktor Fries Torg', '10')" [color=orange]
+	"('Doktor Sydows Gata', '10')" [color=orange]
+	"('Domkyrkan', '11')" [color=orange]
+	"('Domkyrkan', '2')" [color=orange]
+	"('Domkyrkan', '6')" [color=orange]
+	"('Ejdergatan', '6')" [color=orange]
+	"('Ejdergatan', '8')" [color=orange]
+	"('Ekedal', '11')" [color=orange]
+	"('Eketrägatan', '10')" [color=orange]
+	"('Eketrägatan', '5')" [color=orange]
+	"('Eketrägatan', '6')" [color=orange]
+	"('Ekmanska', '5')" [color=orange]
+	"('Elisedal', '2')" [color=orange]
+	"('Elisedal', '4')" [color=orange]
+	"('Fjällgatan', '11')" [color=orange]
+	"('Frihamnen', '10')" [color=orange]
+	"('Frihamnen', '5')" [color=orange]
+	"('Frihamnen', '6')" [color=orange]
+	"('Friskväderstorget', '10')" [color=orange]
+	"('Friskväderstorget', '5')" [color=orange]
+	"('Friskväderstorget', '6')" [color=orange]
+	"('Frölunda Torg Spårvagn', '1')" [color=orange]
+	"('Frölunda Torg Spårvagn', '7')" [color=orange]
+	"('Frölunda Torg Spårvagn', '8')" [color=orange]
+	"('Galileis Gata', '11')" [color=orange]
+	"('Galileis Gata', '7')" [color=orange]
+	"('Gamlestads Torg', '11')" [color=orange]
+	"('Gamlestads Torg', '4')" [color=orange]
+	"('Gamlestads Torg', '6')" [color=orange]
+	"('Gamlestads Torg', '7')" [color=orange]
+	"('Gamlestads Torg', '8')" [color=orange]
+	"('Gamlestads Torg', '9')" [color=orange]
+	"('Godhemsgatan', '11')" [color=orange]
+	"('Godhemsgatan', '3')" [color=orange]
+	"('Gropegårdsgatan', '10')" [color=orange]
+	"('Gropegårdsgatan', '5')" [color=orange]
+	"('Gropegårdsgatan', '6')" [color=orange]
+	"('Grönsakstorget', '11')" [color=orange]
+	"('Grönsakstorget', '2')" [color=orange]
+	"('Grönsakstorget', '6')" [color=orange]
+	"('Hagakyrkan', '11')" [color=orange]
+	"('Hagakyrkan', '3')" [color=orange]
+	"('Hagakyrkan', '6')" [color=orange]
+	"('Hagen', '11')" [color=orange]
+	"('Hagen', '13')" [color=orange]
+	"('Hammarkullen', '4')" [color=orange]
+	"('Hammarkullen', '8')" [color=orange]
+	"('Hammarkullen', '9')" [color=orange]
+	"('Handelshögskolan', '2')" [color=orange]
+	"('Hinsholmen', '11')" [color=orange]
+	"('Hinsholmen', '13')" [color=orange]
+	"('Hjalmar Brantingsplatsen', '10')" [color=orange]
+	"('Hjalmar Brantingsplatsen', '5')" [color=orange]
+	"('Hjalmar Brantingsplatsen', '6')" [color=orange]
+	"('Hjällbo', '4')" [color=orange]
+	"('Hjällbo', '8')" [color=orange]
+	"('Hjällbo', '9')" [color=orange]
+	"('Härlanda', '1')" [color=orange]
+	"('Härlanda', '3')" [color=orange]
+	"('Högsbogatan', '3')" [color=orange]
+	"('Jaegerdorffsplatsen', '3')" [color=orange]
+	"('Jaegerdorffsplatsen', '9')" [color=orange]
+	"('Januarigatan', '11')" [color=orange]
+	"('Januarigatan', '7')" [color=orange]
+	"('Järntorget', '1')" [color=orange]
+	"('Järntorget', '11')" [color=orange]
+	"('Järntorget', '3')" [color=orange]
+	"('Järntorget', '6')" [color=orange]
+	"('Järntorget', '9')" [color=orange]
+	"('Kaggeledstorget', '1')" [color=orange]
+	"('Kaggeledstorget', '5')" [color=orange]
+	"('Kapellplatsen', '10')" [color=orange]
+	"('Kapellplatsen', '7')" [color=orange]
+	"('Kaptensgatan', '3')" [color=orange]
+	"('Kaptensgatan', '9')" [color=orange]
+	"('Klintens Väg', '3')" [color=orange]
+	"('Komettorget', '11')" [color=orange]
+	"('Komettorget', '7')" [color=orange]
+	"('Korsvägen', '13')" [color=orange]
+	"('Korsvägen', '2')" [color=orange]
+	"('Korsvägen', '4')" [color=orange]
+	"('Korsvägen', '5')" [color=orange]
+	"('Korsvägen', '6')" [color=orange]
+	"('Korsvägen', '8')" [color=orange]
+	"('Kortedala Torg', '11')" [color=orange]
+	"('Kortedala Torg', '6')" [color=orange]
+	"('Kortedala Torg', '7')" [color=orange]
+	"('Krokslätts Fabriker', '2')" [color=orange]
+	"('Krokslätts Fabriker', '4')" [color=orange]
+	"('Krokslätts torg', '2')" [color=orange]
+	"('Krokslätts torg', '4')" [color=orange]
+	"('Kungsportsplatsen', '10')" [color=orange]
+	"('Kungsportsplatsen', '3')" [color=orange]
+	"('Kungsportsplatsen', '4')" [color=orange]
+	"('Kungsportsplatsen', '5')" [color=orange]
+	"('Kungsportsplatsen', '7')" [color=orange]
+	"('Kungssten', '11')" [color=orange]
+	"('Kungssten', '13')" [color=orange]
+	"('Kungssten', '9')" [color=orange]
+	"('Kviberg', '11')" [color=orange]
+	"('Kviberg', '6')" [color=orange]
+	"('Kviberg', '7')" [color=orange]
+	"('Käringberget', '11')" [color=orange]
+	"('Käringberget', '13')" [color=orange]
+	"('Lackarebäck', '2')" [color=orange]
+	"('Lackarebäck', '4')" [color=orange]
+	"('Lana', '2')" [color=orange]
+	"('Lana', '4')" [color=orange]
+	"('Lantmilsgatan', '1')" [color=orange]
+	"('Lantmilsgatan', '7')" [color=orange]
+	"('Lantmilsgatan', '8')" [color=orange]
+	"('Lilla Bommen', '10')" [color=orange]
+	"('Lilla Bommen', '5')" [color=orange]
+	"('Linnéplatsen', '1')" [color=orange]
+	"('Linnéplatsen', '2')" [color=orange]
+	"('Linnéplatsen', '6')" [color=orange]
+	"('Liseberg Station', '5')" [color=orange]
+	"('Liseberg Södra', '2')" [color=orange]
+	"('Liseberg Södra', '4')" [color=orange]
+	"('Långedrag', '11')" [color=orange]
+	"('Långedrag', '13')" [color=orange]
+	"('Majvallen', '11')" [color=orange]
+	"('Mariaplan', '11')" [color=orange]
+	"('Mariaplan', '13')" [color=orange]
+	"('Mariaplan', '3')" [color=orange]
+	"('Marklandsgatan', '1')" [color=orange]
+	"('Marklandsgatan', '13')" [color=orange]
+	"('Marklandsgatan', '2')" [color=orange]
+	"('Marklandsgatan', '3')" [color=orange]
+	"('Marklandsgatan', '7')" [color=orange]
+	"('Marklandsgatan', '8')" [color=orange]
+	"('Masthuggstorget', '11')" [color=orange]
+	"('Masthuggstorget', '3')" [color=orange]
+	"('Masthuggstorget', '9')" [color=orange]
+	"('Medicinaregatan', '13')" [color=orange]
+	"('Medicinaregatan', '6')" [color=orange]
+	"('Medicinaregatan', '7')" [color=orange]
+	"('Medicinaregatan', '8')" [color=orange]
+	"('Mildvädersgatan', '10')" [color=orange]
+	"('Mildvädersgatan', '5')" [color=orange]
+	"('Mildvädersgatan', '6')" [color=orange]
+	"('Munkebäckstorget', '1')" [color=orange]
+	"('Munkebäckstorget', '5')" [color=orange]
+	"('Musikvägen', '1')" [color=orange]
+	"('Musikvägen', '7')" [color=orange]
+	"('Musikvägen', '8')" [color=orange]
+	"('Mölndals Innerstad', '2')" [color=orange]
+	"('Mölndals Innerstad', '4')" [color=orange]
+	"('Mölndals sjukhus', '2')" [color=orange]
+	"('Mölndals sjukhus', '4')" [color=orange]
+	"('Nordstan', '6')" [color=orange]
+	"('Nya Varvsallén', '11')" [color=orange]
+	"('Nya Varvsallén', '13')" [color=orange]
+	"('Nymilsgatan', '1')" [color=orange]
+	"('Nymilsgatan', '7')" [color=orange]
+	"('Nymilsgatan', '8')" [color=orange]
+	"('Nymånegatan', '11')" [color=orange]
+	"('Nymånegatan', '6')" [color=orange]
+	"('Nymånegatan', '7')" [color=orange]
+	"('Olivedalsgatan', '1')" [color=orange]
+	"('Olivedalsgatan', '2')" [color=orange]
+	"('Olivedalsgatan', '6')" [color=orange]
+	"('Olskrokstorget', '1')" [color=orange]
+	"('Olskrokstorget', '3')" [color=orange]
+	"('Olskrokstorget', '6')" [color=orange]
+	"('Olskrokstorget', '8')" [color=orange]
+	"('Opaltorget', '1')" [color=orange]
+	"('Opaltorget', '7')" [color=orange]
+	"('Ostindiegatan', '3')" [color=orange]
+	"('Ostindiegatan', '9')" [color=orange]
+	"('Positivgatan', '1')" [color=orange]
+	"('Positivgatan', '7')" [color=orange]
+	"('Positivgatan', '8')" [color=orange]
+	"('Prinsgatan', '1')" [color=orange]
+	"('Prinsgatan', '6')" [color=orange]
+	"('Rambergsvallen', '10')" [color=orange]
+	"('Rambergsvallen', '5')" [color=orange]
+	"('Rambergsvallen', '6')" [color=orange]
+	"('Redbergsplatsen', '1')" [color=orange]
+	"('Redbergsplatsen', '3')" [color=orange]
+	"('Redbergsplatsen', '6')" [color=orange]
+	"('Redbergsplatsen', '8')" [color=orange]
+	"('Roddföreningen', '11')" [color=orange]
+	"('Roddföreningen', '13')" [color=orange]
+	"('Runstavsgatan', '11')" [color=orange]
+	"('Runstavsgatan', '6')" [color=orange]
+	"('Runstavsgatan', '7')" [color=orange]
+	"('Rymdtorget Spårvagn', '11')" [color=orange]
+	"('Rymdtorget Spårvagn', '7')" [color=orange]
+	"('SKF', '11')" [color=orange]
+	"('SKF', '6')" [color=orange]
+	"('SKF', '7')" [color=orange]
+	"('Sahlgrenska Huvudentré', '13')" [color=orange]
+	"('Sahlgrenska Huvudentré', '6')" [color=orange]
+	"('Sahlgrenska Huvudentré', '7')" [color=orange]
+	"('Sahlgrenska Huvudentré', '8')" [color=orange]
+	"('Saltholmen', '11')" [color=orange]
+	"('Saltholmen', '13')" [color=orange]
+	"('Sanatoriegatan', '3')" [color=orange]
+	"('Sanatoriegatan', '5')" [color=orange]
+	"('Sandarna', '11')" [color=orange]
+	"('Sandarna', '13')" [color=orange]
+	"('Sandarna', '9')" [color=orange]
+	"('Sankt Sigfrids Plan', '5')" [color=orange]
+	"('Sannaplan', '11')" [color=orange]
+	"('Sannaplan', '13')" [color=orange]
+	"('Sannaplan', '9')" [color=orange]
+	"('Scandinavium', '13')" [color=orange]
+	"('Scandinavium', '2')" [color=orange]
+	"('Scandinavium', '6')" [color=orange]
+	"('Scandinavium', '8')" [color=orange]
+	"('Seminariegatan', '2')" [color=orange]
+	"('Smaragdgatan', '1')" [color=orange]
+	"('Smaragdgatan', '7')" [color=orange]
+	"('Solrosgatan', '3')" [color=orange]
+	"('Solrosgatan', '5')" [color=orange]
+	"('Stenpiren', '1')" [color=orange]
+	"('Stenpiren', '9')" [color=orange]
+	"('Stigbergstorget', '11')" [color=orange]
+	"('Stigbergstorget', '3')" [color=orange]
+	"('Stigbergstorget', '9')" [color=orange]
+	"('Stockholmsgatan', '1')" [color=orange]
+	"('Stockholmsgatan', '3')" [color=orange]
+	"('Storås', '4')" [color=orange]
+	"('Storås', '8')" [color=orange]
+	"('Storås', '9')" [color=orange]
+	"('Svingeln', '1')" [color=orange]
+	"('Svingeln', '3')" [color=orange]
+	"('Svingeln', '6')" [color=orange]
+	"('Svingeln', '8')" [color=orange]
+	"('Sälöfjordsgatan', '10')" [color=orange]
+	"('Sälöfjordsgatan', '5')" [color=orange]
+	"('Sälöfjordsgatan', '6')" [color=orange]
+	"('Teleskopgatan', '11')" [color=orange]
+	"('Teleskopgatan', '7')" [color=orange]
+	"('Temperaturgatan', '5')" [color=orange]
+	"('Temperaturgatan', '6')" [color=orange]
+	"('Tingvallsvägen', '1')" [color=orange]
+	"('Tingvallsvägen', '5')" [color=orange]
+	"('Tranered', '11')" [color=orange]
+	"('Tranered', '13')" [color=orange]
+	"('Töpelsgatan', '5')" [color=orange]
+	"('Ullevi Norra', '1')" [color=orange]
+	"('Ullevi Norra', '3')" [color=orange]
+	"('Ullevi Norra', '6')" [color=orange]
+	"('Ullevi Norra', '8')" [color=orange]
+	"('Ullevi Södra', '13')" [color=orange]
+	"('Ullevi Södra', '2')" [color=orange]
+	"('Ullevi Södra', '6')" [color=orange]
+	"('Ullevi Södra', '8')" [color=orange]
+	"('Vagnhallen Majorna', '3')" [color=orange]
+	"('Vagnhallen Majorna', '9')" [color=orange]
+	"('Valand', '10')" [color=orange]
+	"('Valand', '3')" [color=orange]
+	"('Valand', '4')" [color=orange]
+	"('Valand', '5')" [color=orange]
+	"('Valand', '7')" [color=orange]
+	"('Varbergsgatan', '2')" [color=orange]
+	"('Varbergsgatan', '4')" [color=orange]
+	"('Varmfrontsgatan', '5')" [color=orange]
+	"('Varmfrontsgatan', '6')" [color=orange]
+	"('Vasa Viktoriagatan', '2')" [color=orange]
+	"('Vasa Viktoriagatan', '3')" [color=orange]
+	"('Vasaplatsen', '10')" [color=orange]
+	"('Vasaplatsen', '2')" [color=orange]
+	"('Vasaplatsen', '3')" [color=orange]
+	"('Vasaplatsen', '7')" [color=orange]
+	"('Virginsgatan', '3')" [color=orange]
+	"('Virginsgatan', '5')" [color=orange]
+	"('Väderilsgatan', '10')" [color=orange]
+	"('Väderilsgatan', '5')" [color=orange]
+	"('Väderilsgatan', '6')" [color=orange]
+	"('Vågmästareplatsen', '10')" [color=orange]
+	"('Vågmästareplatsen', '5')" [color=orange]
+	"('Vågmästareplatsen', '6')" [color=orange]
+	"('Vårväderstorget', '10')" [color=orange]
+	"('Vårväderstorget', '5')" [color=orange]
+	"('Vårväderstorget', '6')" [color=orange]
+	"('Wavrinskys Plats', '10')" [color=orange]
+	"('Wavrinskys Plats', '13')" [color=orange]
+	"('Wavrinskys Plats', '6')" [color=orange]
+	"('Wavrinskys Plats', '7')" [color=orange]
+	"('Wavrinskys Plats', '8')" [color=orange]
+	"('Welandergatan', '5')" [color=orange]
+	"('Wieselgrensplatsen', '10')" [color=orange]
+	"('Wieselgrensplatsen', '5')" [color=orange]
+	"('Wieselgrensplatsen', '6')" [color=orange]
+	"('Ättehögsgatan', '1')" [color=orange]
+	"('Ättehögsgatan', '5')" [color=orange]
+	"('Önskevädersgatan', '10')" [color=orange]
+	"('Önskevädersgatan', '5')" [color=orange]
+	"('Önskevädersgatan', '6')" [color=orange]
+	"('Östra Sjukhuset', '1')" [color=orange]
+	"('Östra Sjukhuset', '5')" [color=orange]
+	"('Östra Sjukhuset', '1')" -- "('Tingvallsvägen', '1')"
+	"('Östra Sjukhuset', '5')" -- "('Tingvallsvägen', '5')"
+	"('Tingvallsvägen', '1')" -- "('Kaggeledstorget', '1')"
+	"('Tingvallsvägen', '5')" -- "('Kaggeledstorget', '5')"
+	"('Kaggeledstorget', '1')" -- "('Ättehögsgatan', '1')"
+	"('Kaggeledstorget', '5')" -- "('Ättehögsgatan', '5')"
+	"('Ättehögsgatan', '1')" -- "('Munkebäckstorget', '1')"
+	"('Ättehögsgatan', '5')" -- "('Munkebäckstorget', '5')"
+	"('Munkebäckstorget', '1')" -- "('Härlanda', '1')"
+	"('Härlanda', '1')" -- "('Stockholmsgatan', '1')"
+	"('Härlanda', '3')" -- "('Stockholmsgatan', '3')"
+	"('Stockholmsgatan', '1')" -- "('Redbergsplatsen', '1')"
+	"('Stockholmsgatan', '3')" -- "('Redbergsplatsen', '3')"
+	"('Redbergsplatsen', '1')" -- "('Olskrokstorget', '1')"
+	"('Redbergsplatsen', '3')" -- "('Olskrokstorget', '3')"
+	"('Redbergsplatsen', '6')" -- "('Olskrokstorget', '6')"
+	"('Redbergsplatsen', '8')" -- "('Olskrokstorget', '8')"
+	"('Olskrokstorget', '1')" -- "('Svingeln', '1')"
+	"('Olskrokstorget', '3')" -- "('Svingeln', '3')"
+	"('Olskrokstorget', '6')" -- "('Svingeln', '6')"
+	"('Olskrokstorget', '8')" -- "('Svingeln', '8')"
+	"('Svingeln', '1')" -- "('Ullevi Norra', '1')"
+	"('Svingeln', '3')" -- "('Ullevi Norra', '3')"
+	"('Svingeln', '6')" -- "('Ullevi Norra', '6')"
+	"('Svingeln', '8')" -- "('Ullevi Norra', '8')"
+	"('Ullevi Norra', '1')" -- "('Centralstationen', '1')"
+	"('Ullevi Norra', '3')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '1')" -- "('Brunnsparken', '1')"
+	"('Centralstationen', '2')" -- "('Brunnsparken', '2')"
+	"('Centralstationen', '3')" -- "('Brunnsparken', '3')"
+	"('Centralstationen', '4')" -- "('Brunnsparken', '4')"
+	"('Centralstationen', '7')" -- "('Brunnsparken', '7')"
+	"('Centralstationen', '9')" -- "('Brunnsparken', '9')"
+	"('Centralstationen', '10')" -- "('Brunnsparken', '10')"
+	"('Centralstationen', '11')" -- "('Brunnsparken', '11')"
+	"('Centralstationen', '4')" -- "('Gamlestads Torg', '4')"
+	"('Centralstationen', '7')" -- "('Gamlestads Torg', '7')"
+	"('Centralstationen', '9')" -- "('Gamlestads Torg', '9')"
+	"('Centralstationen', '11')" -- "('Gamlestads Torg', '11')"
+	"('Brunnsparken', '1')" -- "('Stenpiren', '1')"
+	"('Brunnsparken', '9')" -- "('Stenpiren', '9')"
+	"('Brunnsparken', '2')" -- "('Domkyrkan', '2')"
+	"('Brunnsparken', '6')" -- "('Domkyrkan', '6')"
+	"('Brunnsparken', '11')" -- "('Domkyrkan', '11')"
+	"('Stenpiren', '1')" -- "('Järntorget', '1')"
+	"('Stenpiren', '9')" -- "('Järntorget', '9')"
+	"('Järntorget', '1')" -- "('Prinsgatan', '1')"
+	"('Järntorget', '6')" -- "('Prinsgatan', '6')"
+	"('Prinsgatan', '1')" -- "('Olivedalsgatan', '1')"
+	"('Prinsgatan', '6')" -- "('Olivedalsgatan', '6')"
+	"('Olivedalsgatan', '1')" -- "('Linnéplatsen', '1')"
+	"('Olivedalsgatan', '2')" -- "('Linnéplatsen', '2')"
+	"('Olivedalsgatan', '6')" -- "('Linnéplatsen', '6')"
+	"('Linnéplatsen', '1')" -- "('Botaniska Trädgården', '1')"
+	"('Linnéplatsen', '2')" -- "('Botaniska Trädgården', '2')"
+	"('Botaniska Trädgården', '1')" -- "('Marklandsgatan', '1')"
+	"('Botaniska Trädgården', '2')" -- "('Marklandsgatan', '2')"
+	"('Botaniska Trädgården', '7')" -- "('Marklandsgatan', '7')"
+	"('Botaniska Trädgården', '8')" -- "('Marklandsgatan', '8')"
+	"('Botaniska Trädgården', '13')" -- "('Marklandsgatan', '13')"
+	"('Botaniska Trädgården', '7')" -- "('Sahlgrenska Huvudentré', '7')"
+	"('Botaniska Trädgården', '8')" -- "('Sahlgrenska Huvudentré', '8')"
+	"('Botaniska Trädgården', '13')" -- "('Sahlgrenska Huvudentré', '13')"
+	"('Marklandsgatan', '1')" -- "('Axel Dahlströms Torg', '1')"
+	"('Marklandsgatan', '2')" -- "('Axel Dahlströms Torg', '2')"
+	"('Marklandsgatan', '7')" -- "('Axel Dahlströms Torg', '7')"
+	"('Marklandsgatan', '8')" -- "('Axel Dahlströms Torg', '8')"
+	"('Axel Dahlströms Torg', '1')" -- "('Lantmilsgatan', '1')"
+	"('Axel Dahlströms Torg', '7')" -- "('Lantmilsgatan', '7')"
+	"('Axel Dahlströms Torg', '8')" -- "('Lantmilsgatan', '8')"
+	"('Lantmilsgatan', '1')" -- "('Nymilsgatan', '1')"
+	"('Lantmilsgatan', '7')" -- "('Nymilsgatan', '7')"
+	"('Lantmilsgatan', '8')" -- "('Nymilsgatan', '8')"
+	"('Nymilsgatan', '1')" -- "('Musikvägen', '1')"
+	"('Nymilsgatan', '7')" -- "('Musikvägen', '7')"
+	"('Nymilsgatan', '8')" -- "('Musikvägen', '8')"
+	"('Musikvägen', '1')" -- "('Positivgatan', '1')"
+	"('Musikvägen', '7')" -- "('Positivgatan', '7')"
+	"('Musikvägen', '8')" -- "('Positivgatan', '8')"
+	"('Positivgatan', '1')" -- "('Frölunda Torg Spårvagn', '1')"
+	"('Positivgatan', '7')" -- "('Frölunda Torg Spårvagn', '7')"
+	"('Positivgatan', '8')" -- "('Frölunda Torg Spårvagn', '8')"
+	"('Frölunda Torg Spårvagn', '1')" -- "('Briljantgatan', '1')"
+	"('Frölunda Torg Spårvagn', '7')" -- "('Briljantgatan', '7')"
+	"('Briljantgatan', '1')" -- "('Smaragdgatan', '1')"
+	"('Briljantgatan', '7')" -- "('Smaragdgatan', '7')"
+	"('Smaragdgatan', '1')" -- "('Opaltorget', '1')"
+	"('Smaragdgatan', '7')" -- "('Opaltorget', '7')"
+	"('Mölndals Innerstad', '2')" -- "('Mölndals sjukhus', '2')"
+	"('Mölndals Innerstad', '4')" -- "('Mölndals sjukhus', '4')"
+	"('Mölndals sjukhus', '2')" -- "('Lackarebäck', '2')"
+	"('Mölndals sjukhus', '4')" -- "('Lackarebäck', '4')"
+	"('Lackarebäck', '2')" -- "('Krokslätts Fabriker', '2')"
+	"('Lackarebäck', '4')" -- "('Krokslätts Fabriker', '4')"
+	"('Krokslätts Fabriker', '2')" -- "('Krokslätts torg', '2')"
+	"('Krokslätts Fabriker', '4')" -- "('Krokslätts torg', '4')"
+	"('Krokslätts torg', '2')" -- "('Lana', '2')"
+	"('Krokslätts torg', '4')" -- "('Lana', '4')"
+	"('Lana', '2')" -- "('Varbergsgatan', '2')"
+	"('Lana', '4')" -- "('Varbergsgatan', '4')"
+	"('Varbergsgatan', '2')" -- "('Elisedal', '2')"
+	"('Varbergsgatan', '4')" -- "('Elisedal', '4')"
+	"('Elisedal', '2')" -- "('Almedal', '2')"
+	"('Elisedal', '4')" -- "('Almedal', '4')"
+	"('Almedal', '2')" -- "('Liseberg Södra', '2')"
+	"('Almedal', '4')" -- "('Liseberg Södra', '4')"
+	"('Liseberg Södra', '2')" -- "('Korsvägen', '2')"
+	"('Liseberg Södra', '4')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '2')" -- "('Scandinavium', '2')"
+	"('Korsvägen', '6')" -- "('Scandinavium', '6')"
+	"('Korsvägen', '8')" -- "('Scandinavium', '8')"
+	"('Korsvägen', '13')" -- "('Scandinavium', '13')"
+	"('Scandinavium', '2')" -- "('Ullevi Södra', '2')"
+	"('Scandinavium', '6')" -- "('Ullevi Södra', '6')"
+	"('Scandinavium', '8')" -- "('Ullevi Södra', '8')"
+	"('Scandinavium', '13')" -- "('Ullevi Södra', '13')"
+	"('Ullevi Södra', '2')" -- "('Centralstationen', '2')"
+	"('Ullevi Södra', '13')" -- "('Centralstationen', '13')"
+	"('Ullevi Södra', '6')" -- "('Ullevi Norra', '6')"
+	"('Ullevi Södra', '8')" -- "('Ullevi Norra', '8')"
+	"('Domkyrkan', '2')" -- "('Grönsakstorget', '2')"
+	"('Domkyrkan', '6')" -- "('Grönsakstorget', '6')"
+	"('Domkyrkan', '11')" -- "('Grönsakstorget', '11')"
+	"('Grönsakstorget', '2')" -- "('Vasaplatsen', '2')"
+	"('Grönsakstorget', '6')" -- "('Hagakyrkan', '6')"
+	"('Grönsakstorget', '11')" -- "('Hagakyrkan', '11')"
+	"('Vasaplatsen', '2')" -- "('Vasa Viktoriagatan', '2')"
+	"('Vasaplatsen', '3')" -- "('Vasa Viktoriagatan', '3')"
+	"('Vasaplatsen', '3')" -- "('Valand', '3')"
+	"('Vasaplatsen', '7')" -- "('Valand', '7')"
+	"('Vasaplatsen', '10')" -- "('Valand', '10')"
+	"('Vasaplatsen', '7')" -- "('Kapellplatsen', '7')"
+	"('Vasaplatsen', '10')" -- "('Kapellplatsen', '10')"
+	"('Vasa Viktoriagatan', '2')" -- "('Handelshögskolan', '2')"
+	"('Handelshögskolan', '2')" -- "('Brunnsgatan', '2')"
+	"('Brunnsgatan', '2')" -- "('Seminariegatan', '2')"
+	"('Seminariegatan', '2')" -- "('Olivedalsgatan', '2')"
+	"('Bokekullsgatan', '3')" -- "('Högsbogatan', '3')"
+	"('Högsbogatan', '3')" -- "('Klintens Väg', '3')"
+	"('Klintens Väg', '3')" -- "('Godhemsgatan', '3')"
+	"('Godhemsgatan', '3')" -- "('Mariaplan', '3')"
+	"('Godhemsgatan', '11')" -- "('Mariaplan', '11')"
+	"('Mariaplan', '3')" -- "('Ostindiegatan', '3')"
+	"('Mariaplan', '11')" -- "('Sannaplan', '11')"
+	"('Mariaplan', '13')" -- "('Sannaplan', '13')"
+	"('Ostindiegatan', '3')" -- "('Vagnhallen Majorna', '3')"
+	"('Ostindiegatan', '9')" -- "('Vagnhallen Majorna', '9')"
+	"('Vagnhallen Majorna', '3')" -- "('Jaegerdorffsplatsen', '3')"
+	"('Vagnhallen Majorna', '9')" -- "('Jaegerdorffsplatsen', '9')"
+	"('Jaegerdorffsplatsen', '3')" -- "('Chapmans Torg', '3')"
+	"('Jaegerdorffsplatsen', '9')" -- "('Chapmans Torg', '9')"
+	"('Chapmans Torg', '3')" -- "('Kaptensgatan', '3')"
+	"('Chapmans Torg', '9')" -- "('Kaptensgatan', '9')"
+	"('Kaptensgatan', '3')" -- "('Stigbergstorget', '3')"
+	"('Kaptensgatan', '9')" -- "('Stigbergstorget', '9')"
+	"('Stigbergstorget', '3')" -- "('Masthuggstorget', '3')"
+	"('Stigbergstorget', '9')" -- "('Masthuggstorget', '9')"
+	"('Stigbergstorget', '11')" -- "('Masthuggstorget', '11')"
+	"('Masthuggstorget', '3')" -- "('Järntorget', '3')"
+	"('Masthuggstorget', '9')" -- "('Järntorget', '9')"
+	"('Masthuggstorget', '11')" -- "('Järntorget', '11')"
+	"('Hagakyrkan', '3')" -- "('Vasa Viktoriagatan', '3')"
+	"('Hagakyrkan', '3')" -- "('Järntorget', '3')"
+	"('Hagakyrkan', '6')" -- "('Järntorget', '6')"
+	"('Hagakyrkan', '11')" -- "('Järntorget', '11')"
+	"('Valand', '3')" -- "('Kungsportsplatsen', '3')"
+	"('Valand', '4')" -- "('Kungsportsplatsen', '4')"
+	"('Valand', '5')" -- "('Kungsportsplatsen', '5')"
+	"('Valand', '7')" -- "('Kungsportsplatsen', '7')"
+	"('Valand', '10')" -- "('Kungsportsplatsen', '10')"
+	"('Kungsportsplatsen', '3')" -- "('Brunnsparken', '3')"
+	"('Kungsportsplatsen', '4')" -- "('Brunnsparken', '4')"
+	"('Kungsportsplatsen', '5')" -- "('Brunnsparken', '5')"
+	"('Kungsportsplatsen', '7')" -- "('Brunnsparken', '7')"
+	"('Kungsportsplatsen', '10')" -- "('Brunnsparken', '10')"
+	"('Solrosgatan', '3')" -- "('Sanatoriegatan', '3')"
+	"('Solrosgatan', '5')" -- "('Sanatoriegatan', '5')"
+	"('Solrosgatan', '5')" -- "('Munkebäckstorget', '5')"
+	"('Sanatoriegatan', '3')" -- "('Virginsgatan', '3')"
+	"('Sanatoriegatan', '5')" -- "('Virginsgatan', '5')"
+	"('Berzeliigatan', '4')" -- "('Valand', '4')"
+	"('Berzeliigatan', '5')" -- "('Valand', '5')"
+	"('Berzeliigatan', '4')" -- "('Korsvägen', '4')"
+	"('Berzeliigatan', '5')" -- "('Korsvägen', '5')"
+	"('Gamlestads Torg', '4')" -- "('Hjällbo', '4')"
+	"('Gamlestads Torg', '8')" -- "('Hjällbo', '8')"
+	"('Gamlestads Torg', '9')" -- "('Hjällbo', '9')"
+	"('Hjällbo', '4')" -- "('Hammarkullen', '4')"
+	"('Hjällbo', '8')" -- "('Hammarkullen', '8')"
+	"('Hjällbo', '9')" -- "('Hammarkullen', '9')"
+	"('Hammarkullen', '4')" -- "('Storås', '4')"
+	"('Hammarkullen', '8')" -- "('Storås', '8')"
+	"('Hammarkullen', '9')" -- "('Storås', '9')"
+	"('Storås', '4')" -- "('Angered Centrum', '4')"
+	"('Storås', '8')" -- "('Angered Centrum', '8')"
+	"('Storås', '9')" -- "('Angered Centrum', '9')"
+	"('Virginsgatan', '5')" -- "('Welandergatan', '5')"
+	"('Welandergatan', '5')" -- "('Töpelsgatan', '5')"
+	"('Töpelsgatan', '5')" -- "('Bögatan', '5')"
+	"('Bögatan', '5')" -- "('Ekmanska', '5')"
+	"('Ekmanska', '5')" -- "('Bäckeliden', '5')"
+	"('Bäckeliden', '5')" -- "('Sankt Sigfrids Plan', '5')"
+	"('Sankt Sigfrids Plan', '5')" -- "('Liseberg Station', '5')"
+	"('Liseberg Station', '5')" -- "('Korsvägen', '5')"
+	"('Lilla Bommen', '5')" -- "('Frihamnen', '5')"
+	"('Lilla Bommen', '10')" -- "('Frihamnen', '10')"
+	"('Lilla Bommen', '10')" -- "('Centralstationen', '10')"
+	"('Frihamnen', '5')" -- "('Hjalmar Brantingsplatsen', '5')"
+	"('Frihamnen', '6')" -- "('Hjalmar Brantingsplatsen', '6')"
+	"('Frihamnen', '10')" -- "('Hjalmar Brantingsplatsen', '10')"
+	"('Hjalmar Brantingsplatsen', '5')" -- "('Vågmästareplatsen', '5')"
+	"('Hjalmar Brantingsplatsen', '6')" -- "('Vågmästareplatsen', '6')"
+	"('Hjalmar Brantingsplatsen', '10')" -- "('Vågmästareplatsen', '10')"
+	"('Vågmästareplatsen', '5')" -- "('Wieselgrensplatsen', '5')"
+	"('Vågmästareplatsen', '6')" -- "('Wieselgrensplatsen', '6')"
+	"('Vågmästareplatsen', '10')" -- "('Wieselgrensplatsen', '10')"
+	"('Wieselgrensplatsen', '5')" -- "('Rambergsvallen', '5')"
+	"('Wieselgrensplatsen', '6')" -- "('Rambergsvallen', '6')"
+	"('Wieselgrensplatsen', '10')" -- "('Rambergsvallen', '10')"
+	"('Rambergsvallen', '5')" -- "('Gropegårdsgatan', '5')"
+	"('Rambergsvallen', '6')" -- "('Gropegårdsgatan', '6')"
+	"('Rambergsvallen', '10')" -- "('Gropegårdsgatan', '10')"
+	"('Gropegårdsgatan', '5')" -- "('Eketrägatan', '5')"
+	"('Gropegårdsgatan', '6')" -- "('Eketrägatan', '6')"
+	"('Gropegårdsgatan', '10')" -- "('Eketrägatan', '10')"
+	"('Eketrägatan', '5')" -- "('Sälöfjordsgatan', '5')"
+	"('Eketrägatan', '6')" -- "('Sälöfjordsgatan', '6')"
+	"('Eketrägatan', '10')" -- "('Sälöfjordsgatan', '10')"
+	"('Sälöfjordsgatan', '5')" -- "('Vårväderstorget', '5')"
+	"('Sälöfjordsgatan', '6')" -- "('Vårväderstorget', '6')"
+	"('Sälöfjordsgatan', '10')" -- "('Vårväderstorget', '10')"
+	"('Vårväderstorget', '5')" -- "('Mildvädersgatan', '5')"
+	"('Vårväderstorget', '6')" -- "('Mildvädersgatan', '6')"
+	"('Vårväderstorget', '10')" -- "('Mildvädersgatan', '10')"
+	"('Mildvädersgatan', '5')" -- "('Önskevädersgatan', '5')"
+	"('Mildvädersgatan', '6')" -- "('Önskevädersgatan', '6')"
+	"('Mildvädersgatan', '10')" -- "('Önskevädersgatan', '10')"
+	"('Önskevädersgatan', '5')" -- "('Friskväderstorget', '5')"
+	"('Önskevädersgatan', '6')" -- "('Friskväderstorget', '6')"
+	"('Önskevädersgatan', '10')" -- "('Friskväderstorget', '10')"
+	"('Friskväderstorget', '5')" -- "('Väderilsgatan', '5')"
+	"('Friskväderstorget', '6')" -- "('Väderilsgatan', '6')"
+	"('Friskväderstorget', '10')" -- "('Väderilsgatan', '10')"
+	"('Väderilsgatan', '5')" -- "('Temperaturgatan', '5')"
+	"('Väderilsgatan', '6')" -- "('Temperaturgatan', '6')"
+	"('Temperaturgatan', '5')" -- "('Varmfrontsgatan', '5')"
+	"('Temperaturgatan', '6')" -- "('Varmfrontsgatan', '6')"
+	"('Aprilgatan', '6')" -- "('Allhelgonakyrkan', '6')"
+	"('Allhelgonakyrkan', '6')" -- "('Kortedala Torg', '6')"
+	"('Allhelgonakyrkan', '7')" -- "('Kortedala Torg', '7')"
+	"('Allhelgonakyrkan', '11')" -- "('Kortedala Torg', '11')"
+	"('Kortedala Torg', '6')" -- "('Runstavsgatan', '6')"
+	"('Kortedala Torg', '7')" -- "('Runstavsgatan', '7')"
+	"('Kortedala Torg', '11')" -- "('Runstavsgatan', '11')"
+	"('Runstavsgatan', '6')" -- "('Nymånegatan', '6')"
+	"('Runstavsgatan', '7')" -- "('Nymånegatan', '7')"
+	"('Runstavsgatan', '11')" -- "('Nymånegatan', '11')"
+	"('Nymånegatan', '6')" -- "('Beväringsgatan', '6')"
+	"('Nymånegatan', '7')" -- "('Beväringsgatan', '7')"
+	"('Nymånegatan', '11')" -- "('Beväringsgatan', '11')"
+	"('Beväringsgatan', '6')" -- "('Kviberg', '6')"
+	"('Beväringsgatan', '7')" -- "('Kviberg', '7')"
+	"('Beväringsgatan', '11')" -- "('Kviberg', '11')"
+	"('Kviberg', '6')" -- "('Bellevue', '6')"
+	"('Kviberg', '7')" -- "('Bellevue', '7')"
+	"('Kviberg', '11')" -- "('Bellevue', '11')"
+	"('Bellevue', '6')" -- "('SKF', '6')"
+	"('Bellevue', '7')" -- "('SKF', '7')"
+	"('Bellevue', '11')" -- "('SKF', '11')"
+	"('SKF', '6')" -- "('Gamlestads Torg', '6')"
+	"('SKF', '7')" -- "('Gamlestads Torg', '7')"
+	"('SKF', '11')" -- "('Gamlestads Torg', '11')"
+	"('Ejdergatan', '6')" -- "('Redbergsplatsen', '6')"
+	"('Ejdergatan', '8')" -- "('Redbergsplatsen', '8')"
+	"('Ejdergatan', '6')" -- "('Gamlestads Torg', '6')"
+	"('Ejdergatan', '8')" -- "('Gamlestads Torg', '8')"
+	"('Chalmers', '6')" -- "('Wavrinskys Plats', '6')"
+	"('Chalmers', '7')" -- "('Wavrinskys Plats', '7')"
+	"('Chalmers', '8')" -- "('Wavrinskys Plats', '8')"
+	"('Chalmers', '10')" -- "('Wavrinskys Plats', '10')"
+	"('Chalmers', '13')" -- "('Wavrinskys Plats', '13')"
+	"('Chalmers', '6')" -- "('Korsvägen', '6')"
+	"('Chalmers', '8')" -- "('Korsvägen', '8')"
+	"('Chalmers', '13')" -- "('Korsvägen', '13')"
+	"('Wavrinskys Plats', '6')" -- "('Medicinaregatan', '6')"
+	"('Wavrinskys Plats', '7')" -- "('Medicinaregatan', '7')"
+	"('Wavrinskys Plats', '8')" -- "('Medicinaregatan', '8')"
+	"('Wavrinskys Plats', '13')" -- "('Medicinaregatan', '13')"
+	"('Medicinaregatan', '6')" -- "('Sahlgrenska Huvudentré', '6')"
+	"('Medicinaregatan', '7')" -- "('Sahlgrenska Huvudentré', '7')"
+	"('Medicinaregatan', '8')" -- "('Sahlgrenska Huvudentré', '8')"
+	"('Medicinaregatan', '13')" -- "('Sahlgrenska Huvudentré', '13')"
+	"('Sahlgrenska Huvudentré', '6')" -- "('Linnéplatsen', '6')"
+	"('Nordstan', '6')" -- "('Frihamnen', '6')"
+	"('Komettorget', '7')" -- "('Rymdtorget Spårvagn', '7')"
+	"('Komettorget', '11')" -- "('Rymdtorget Spårvagn', '11')"
+	"('Rymdtorget Spårvagn', '7')" -- "('Teleskopgatan', '7')"
+	"('Rymdtorget Spårvagn', '11')" -- "('Teleskopgatan', '11')"
+	"('Teleskopgatan', '7')" -- "('Galileis Gata', '7')"
+	"('Teleskopgatan', '11')" -- "('Galileis Gata', '11')"
+	"('Galileis Gata', '7')" -- "('Januarigatan', '7')"
+	"('Galileis Gata', '11')" -- "('Januarigatan', '11')"
+	"('Januarigatan', '7')" -- "('Allhelgonakyrkan', '7')"
+	"('Januarigatan', '11')" -- "('Allhelgonakyrkan', '11')"
+	"('Kapellplatsen', '7')" -- "('Chalmers', '7')"
+	"('Kapellplatsen', '10')" -- "('Chalmers', '10')"
+	"('Sannaplan', '9')" -- "('Sandarna', '9')"
+	"('Sannaplan', '11')" -- "('Sandarna', '11')"
+	"('Sannaplan', '13')" -- "('Sandarna', '13')"
+	"('Sandarna', '9')" -- "('Kungssten', '9')"
+	"('Sandarna', '11')" -- "('Kungssten', '11')"
+	"('Sandarna', '13')" -- "('Kungssten', '13')"
+	"('Doktor Sydows Gata', '10')" -- "('Doktor Fries Torg', '10')"
+	"('Doktor Fries Torg', '10')" -- "('Wavrinskys Plats', '10')"
+	"('Saltholmen', '11')" -- "('Roddföreningen', '11')"
+	"('Saltholmen', '13')" -- "('Roddföreningen', '13')"
+	"('Roddföreningen', '11')" -- "('Långedrag', '11')"
+	"('Roddföreningen', '13')" -- "('Långedrag', '13')"
+	"('Långedrag', '11')" -- "('Hinsholmen', '11')"
+	"('Långedrag', '13')" -- "('Hinsholmen', '13')"
+	"('Hinsholmen', '11')" -- "('Käringberget', '11')"
+	"('Hinsholmen', '13')" -- "('Käringberget', '13')"
+	"('Käringberget', '11')" -- "('Tranered', '11')"
+	"('Käringberget', '13')" -- "('Tranered', '13')"
+	"('Tranered', '11')" -- "('Hagen', '11')"
+	"('Tranered', '13')" -- "('Hagen', '13')"
+	"('Hagen', '11')" -- "('Nya Varvsallén', '11')"
+	"('Hagen', '13')" -- "('Nya Varvsallén', '13')"
+	"('Nya Varvsallén', '11')" -- "('Kungssten', '11')"
+	"('Nya Varvsallén', '13')" -- "('Kungssten', '13')"
+	"('Ekedal', '11')" -- "('Majvallen', '11')"
+	"('Majvallen', '11')" -- "('Fjällgatan', '11')"
+	"('Fjällgatan', '11')" -- "('Stigbergstorget', '11')"
+	"('Östra Sjukhuset', '1')" -- "('Östra Sjukhuset', '5')"
+	"('Östra Sjukhuset', '5')" -- "('Östra Sjukhuset', '1')"
+	"('Tingvallsvägen', '1')" -- "('Tingvallsvägen', '5')"
+	"('Tingvallsvägen', '5')" -- "('Tingvallsvägen', '1')"
+	"('Kaggeledstorget', '1')" -- "('Kaggeledstorget', '5')"
+	"('Kaggeledstorget', '5')" -- "('Kaggeledstorget', '1')"
+	"('Ättehögsgatan', '1')" -- "('Ättehögsgatan', '5')"
+	"('Ättehögsgatan', '5')" -- "('Ättehögsgatan', '1')"
+	"('Munkebäckstorget', '1')" -- "('Munkebäckstorget', '5')"
+	"('Munkebäckstorget', '5')" -- "('Munkebäckstorget', '1')"
+	"('Härlanda', '1')" -- "('Härlanda', '3')"
+	"('Härlanda', '3')" -- "('Härlanda', '1')"
+	"('Stockholmsgatan', '1')" -- "('Stockholmsgatan', '3')"
+	"('Stockholmsgatan', '3')" -- "('Stockholmsgatan', '1')"
+	"('Redbergsplatsen', '1')" -- "('Redbergsplatsen', '3')"
+	"('Redbergsplatsen', '1')" -- "('Redbergsplatsen', '6')"
+	"('Redbergsplatsen', '1')" -- "('Redbergsplatsen', '8')"
+	"('Redbergsplatsen', '3')" -- "('Redbergsplatsen', '1')"
+	"('Redbergsplatsen', '3')" -- "('Redbergsplatsen', '6')"
+	"('Redbergsplatsen', '3')" -- "('Redbergsplatsen', '8')"
+	"('Redbergsplatsen', '6')" -- "('Redbergsplatsen', '1')"
+	"('Redbergsplatsen', '6')" -- "('Redbergsplatsen', '3')"
+	"('Redbergsplatsen', '6')" -- "('Redbergsplatsen', '8')"
+	"('Redbergsplatsen', '8')" -- "('Redbergsplatsen', '1')"
+	"('Redbergsplatsen', '8')" -- "('Redbergsplatsen', '3')"
+	"('Redbergsplatsen', '8')" -- "('Redbergsplatsen', '6')"
+	"('Olskrokstorget', '1')" -- "('Olskrokstorget', '3')"
+	"('Olskrokstorget', '1')" -- "('Olskrokstorget', '6')"
+	"('Olskrokstorget', '1')" -- "('Olskrokstorget', '8')"
+	"('Olskrokstorget', '3')" -- "('Olskrokstorget', '1')"
+	"('Olskrokstorget', '3')" -- "('Olskrokstorget', '6')"
+	"('Olskrokstorget', '3')" -- "('Olskrokstorget', '8')"
+	"('Olskrokstorget', '6')" -- "('Olskrokstorget', '1')"
+	"('Olskrokstorget', '6')" -- "('Olskrokstorget', '3')"
+	"('Olskrokstorget', '6')" -- "('Olskrokstorget', '8')"
+	"('Olskrokstorget', '8')" -- "('Olskrokstorget', '1')"
+	"('Olskrokstorget', '8')" -- "('Olskrokstorget', '3')"
+	"('Olskrokstorget', '8')" -- "('Olskrokstorget', '6')"
+	"('Svingeln', '1')" -- "('Svingeln', '3')"
+	"('Svingeln', '1')" -- "('Svingeln', '6')"
+	"('Svingeln', '1')" -- "('Svingeln', '8')"
+	"('Svingeln', '3')" -- "('Svingeln', '1')"
+	"('Svingeln', '3')" -- "('Svingeln', '6')"
+	"('Svingeln', '3')" -- "('Svingeln', '8')"
+	"('Svingeln', '6')" -- "('Svingeln', '1')"
+	"('Svingeln', '6')" -- "('Svingeln', '3')"
+	"('Svingeln', '6')" -- "('Svingeln', '8')"
+	"('Svingeln', '8')" -- "('Svingeln', '1')"
+	"('Svingeln', '8')" -- "('Svingeln', '3')"
+	"('Svingeln', '8')" -- "('Svingeln', '6')"
+	"('Ullevi Norra', '1')" -- "('Ullevi Norra', '3')"
+	"('Ullevi Norra', '1')" -- "('Ullevi Norra', '6')"
+	"('Ullevi Norra', '1')" -- "('Ullevi Norra', '8')"
+	"('Ullevi Norra', '3')" -- "('Ullevi Norra', '1')"
+	"('Ullevi Norra', '3')" -- "('Ullevi Norra', '6')"
+	"('Ullevi Norra', '3')" -- "('Ullevi Norra', '8')"
+	"('Ullevi Norra', '6')" -- "('Ullevi Norra', '1')"
+	"('Ullevi Norra', '6')" -- "('Ullevi Norra', '3')"
+	"('Ullevi Norra', '6')" -- "('Ullevi Norra', '8')"
+	"('Ullevi Norra', '8')" -- "('Ullevi Norra', '1')"
+	"('Ullevi Norra', '8')" -- "('Ullevi Norra', '3')"
+	"('Ullevi Norra', '8')" -- "('Ullevi Norra', '6')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '1')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '2')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '3')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '4')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '7')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '9')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '11')"
+	"('Centralstationen', '10')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '11')" -- "('Centralstationen', '13')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '1')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '2')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '3')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '4')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '7')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '9')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '10')"
+	"('Centralstationen', '13')" -- "('Centralstationen', '11')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '1')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '2')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '3')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '4')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '5')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '6')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '7')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '10')"
+	"('Brunnsparken', '9')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '10')" -- "('Brunnsparken', '11')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '1')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '2')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '3')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '4')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '5')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '6')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '7')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '9')"
+	"('Brunnsparken', '11')" -- "('Brunnsparken', '10')"
+	"('Stenpiren', '1')" -- "('Stenpiren', '9')"
+	"('Stenpiren', '9')" -- "('Stenpiren', '1')"
+	"('Järntorget', '1')" -- "('Järntorget', '3')"
+	"('Järntorget', '1')" -- "('Järntorget', '6')"
+	"('Järntorget', '1')" -- "('Järntorget', '9')"
+	"('Järntorget', '1')" -- "('Järntorget', '11')"
+	"('Järntorget', '3')" -- "('Järntorget', '1')"
+	"('Järntorget', '3')" -- "('Järntorget', '6')"
+	"('Järntorget', '3')" -- "('Järntorget', '9')"
+	"('Järntorget', '3')" -- "('Järntorget', '11')"
+	"('Järntorget', '6')" -- "('Järntorget', '1')"
+	"('Järntorget', '6')" -- "('Järntorget', '3')"
+	"('Järntorget', '6')" -- "('Järntorget', '9')"
+	"('Järntorget', '6')" -- "('Järntorget', '11')"
+	"('Järntorget', '9')" -- "('Järntorget', '1')"
+	"('Järntorget', '9')" -- "('Järntorget', '3')"
+	"('Järntorget', '9')" -- "('Järntorget', '6')"
+	"('Järntorget', '9')" -- "('Järntorget', '11')"
+	"('Järntorget', '11')" -- "('Järntorget', '1')"
+	"('Järntorget', '11')" -- "('Järntorget', '3')"
+	"('Järntorget', '11')" -- "('Järntorget', '6')"
+	"('Järntorget', '11')" -- "('Järntorget', '9')"
+	"('Prinsgatan', '1')" -- "('Prinsgatan', '6')"
+	"('Prinsgatan', '6')" -- "('Prinsgatan', '1')"
+	"('Olivedalsgatan', '1')" -- "('Olivedalsgatan', '2')"
+	"('Olivedalsgatan', '1')" -- "('Olivedalsgatan', '6')"
+	"('Olivedalsgatan', '2')" -- "('Olivedalsgatan', '1')"
+	"('Olivedalsgatan', '2')" -- "('Olivedalsgatan', '6')"
+	"('Olivedalsgatan', '6')" -- "('Olivedalsgatan', '1')"
+	"('Olivedalsgatan', '6')" -- "('Olivedalsgatan', '2')"
+	"('Linnéplatsen', '1')" -- "('Linnéplatsen', '2')"
+	"('Linnéplatsen', '1')" -- "('Linnéplatsen', '6')"
+	"('Linnéplatsen', '2')" -- "('Linnéplatsen', '1')"
+	"('Linnéplatsen', '2')" -- "('Linnéplatsen', '6')"
+	"('Linnéplatsen', '6')" -- "('Linnéplatsen', '1')"
+	"('Linnéplatsen', '6')" -- "('Linnéplatsen', '2')"
+	"('Botaniska Trädgården', '1')" -- "('Botaniska Trädgården', '2')"
+	"('Botaniska Trädgården', '1')" -- "('Botaniska Trädgården', '7')"
+	"('Botaniska Trädgården', '1')" -- "('Botaniska Trädgården', '8')"
+	"('Botaniska Trädgården', '1')" -- "('Botaniska Trädgården', '13')"
+	"('Botaniska Trädgården', '2')" -- "('Botaniska Trädgården', '1')"
+	"('Botaniska Trädgården', '2')" -- "('Botaniska Trädgården', '7')"
+	"('Botaniska Trädgården', '2')" -- "('Botaniska Trädgården', '8')"
+	"('Botaniska Trädgården', '2')" -- "('Botaniska Trädgården', '13')"
+	"('Botaniska Trädgården', '7')" -- "('Botaniska Trädgården', '1')"
+	"('Botaniska Trädgården', '7')" -- "('Botaniska Trädgården', '2')"
+	"('Botaniska Trädgården', '7')" -- "('Botaniska Trädgården', '8')"
+	"('Botaniska Trädgården', '7')" -- "('Botaniska Trädgården', '13')"
+	"('Botaniska Trädgården', '8')" -- "('Botaniska Trädgården', '1')"
+	"('Botaniska Trädgården', '8')" -- "('Botaniska Trädgården', '2')"
+	"('Botaniska Trädgården', '8')" -- "('Botaniska Trädgården', '7')"
+	"('Botaniska Trädgården', '8')" -- "('Botaniska Trädgården', '13')"
+	"('Botaniska Trädgården', '13')" -- "('Botaniska Trädgården', '1')"
+	"('Botaniska Trädgården', '13')" -- "('Botaniska Trädgården', '2')"
+	"('Botaniska Trädgården', '13')" -- "('Botaniska Trädgården', '7')"
+	"('Botaniska Trädgården', '13')" -- "('Botaniska Trädgården', '8')"
+	"('Marklandsgatan', '1')" -- "('Marklandsgatan', '2')"
+	"('Marklandsgatan', '1')" -- "('Marklandsgatan', '3')"
+	"('Marklandsgatan', '1')" -- "('Marklandsgatan', '7')"
+	"('Marklandsgatan', '1')" -- "('Marklandsgatan', '8')"
+	"('Marklandsgatan', '1')" -- "('Marklandsgatan', '13')"
+	"('Marklandsgatan', '2')" -- "('Marklandsgatan', '1')"
+	"('Marklandsgatan', '2')" -- "('Marklandsgatan', '3')"
+	"('Marklandsgatan', '2')" -- "('Marklandsgatan', '7')"
+	"('Marklandsgatan', '2')" -- "('Marklandsgatan', '8')"
+	"('Marklandsgatan', '2')" -- "('Marklandsgatan', '13')"
+	"('Marklandsgatan', '3')" -- "('Marklandsgatan', '1')"
+	"('Marklandsgatan', '3')" -- "('Marklandsgatan', '2')"
+	"('Marklandsgatan', '3')" -- "('Marklandsgatan', '7')"
+	"('Marklandsgatan', '3')" -- "('Marklandsgatan', '8')"
+	"('Marklandsgatan', '3')" -- "('Marklandsgatan', '13')"
+	"('Marklandsgatan', '7')" -- "('Marklandsgatan', '1')"
+	"('Marklandsgatan', '7')" -- "('Marklandsgatan', '2')"
+	"('Marklandsgatan', '7')" -- "('Marklandsgatan', '3')"
+	"('Marklandsgatan', '7')" -- "('Marklandsgatan', '8')"
+	"('Marklandsgatan', '7')" -- "('Marklandsgatan', '13')"
+	"('Marklandsgatan', '8')" -- "('Marklandsgatan', '1')"
+	"('Marklandsgatan', '8')" -- "('Marklandsgatan', '2')"
+	"('Marklandsgatan', '8')" -- "('Marklandsgatan', '3')"
+	"('Marklandsgatan', '8')" -- "('Marklandsgatan', '7')"
+	"('Marklandsgatan', '8')" -- "('Marklandsgatan', '13')"
+	"('Marklandsgatan', '13')" -- "('Marklandsgatan', '1')"
+	"('Marklandsgatan', '13')" -- "('Marklandsgatan', '2')"
+	"('Marklandsgatan', '13')" -- "('Marklandsgatan', '3')"
+	"('Marklandsgatan', '13')" -- "('Marklandsgatan', '7')"
+	"('Marklandsgatan', '13')" -- "('Marklandsgatan', '8')"
+	"('Axel Dahlströms Torg', '1')" -- "('Axel Dahlströms Torg', '2')"
+	"('Axel Dahlströms Torg', '1')" -- "('Axel Dahlströms Torg', '7')"
+	"('Axel Dahlströms Torg', '1')" -- "('Axel Dahlströms Torg', '8')"
+	"('Axel Dahlströms Torg', '2')" -- "('Axel Dahlströms Torg', '1')"
+	"('Axel Dahlströms Torg', '2')" -- "('Axel Dahlströms Torg', '7')"
+	"('Axel Dahlströms Torg', '2')" -- "('Axel Dahlströms Torg', '8')"
+	"('Axel Dahlströms Torg', '7')" -- "('Axel Dahlströms Torg', '1')"
+	"('Axel Dahlströms Torg', '7')" -- "('Axel Dahlströms Torg', '2')"
+	"('Axel Dahlströms Torg', '7')" -- "('Axel Dahlströms Torg', '8')"
+	"('Axel Dahlströms Torg', '8')" -- "('Axel Dahlströms Torg', '1')"
+	"('Axel Dahlströms Torg', '8')" -- "('Axel Dahlströms Torg', '2')"
+	"('Axel Dahlströms Torg', '8')" -- "('Axel Dahlströms Torg', '7')"
+	"('Lantmilsgatan', '1')" -- "('Lantmilsgatan', '7')"
+	"('Lantmilsgatan', '1')" -- "('Lantmilsgatan', '8')"
+	"('Lantmilsgatan', '7')" -- "('Lantmilsgatan', '1')"
+	"('Lantmilsgatan', '7')" -- "('Lantmilsgatan', '8')"
+	"('Lantmilsgatan', '8')" -- "('Lantmilsgatan', '1')"
+	"('Lantmilsgatan', '8')" -- "('Lantmilsgatan', '7')"
+	"('Nymilsgatan', '1')" -- "('Nymilsgatan', '7')"
+	"('Nymilsgatan', '1')" -- "('Nymilsgatan', '8')"
+	"('Nymilsgatan', '7')" -- "('Nymilsgatan', '1')"
+	"('Nymilsgatan', '7')" -- "('Nymilsgatan', '8')"
+	"('Nymilsgatan', '8')" -- "('Nymilsgatan', '1')"
+	"('Nymilsgatan', '8')" -- "('Nymilsgatan', '7')"
+	"('Musikvägen', '1')" -- "('Musikvägen', '7')"
+	"('Musikvägen', '1')" -- "('Musikvägen', '8')"
+	"('Musikvägen', '7')" -- "('Musikvägen', '1')"
+	"('Musikvägen', '7')" -- "('Musikvägen', '8')"
+	"('Musikvägen', '8')" -- "('Musikvägen', '1')"
+	"('Musikvägen', '8')" -- "('Musikvägen', '7')"
+	"('Positivgatan', '1')" -- "('Positivgatan', '7')"
+	"('Positivgatan', '1')" -- "('Positivgatan', '8')"
+	"('Positivgatan', '7')" -- "('Positivgatan', '1')"
+	"('Positivgatan', '7')" -- "('Positivgatan', '8')"
+	"('Positivgatan', '8')" -- "('Positivgatan', '1')"
+	"('Positivgatan', '8')" -- "('Positivgatan', '7')"
+	"('Frölunda Torg Spårvagn', '1')" -- "('Frölunda Torg Spårvagn', '7')"
+	"('Frölunda Torg Spårvagn', '1')" -- "('Frölunda Torg Spårvagn', '8')"
+	"('Frölunda Torg Spårvagn', '7')" -- "('Frölunda Torg Spårvagn', '1')"
+	"('Frölunda Torg Spårvagn', '7')" -- "('Frölunda Torg Spårvagn', '8')"
+	"('Frölunda Torg Spårvagn', '8')" -- "('Frölunda Torg Spårvagn', '1')"
+	"('Frölunda Torg Spårvagn', '8')" -- "('Frölunda Torg Spårvagn', '7')"
+	"('Briljantgatan', '1')" -- "('Briljantgatan', '7')"
+	"('Briljantgatan', '7')" -- "('Briljantgatan', '1')"
+	"('Smaragdgatan', '1')" -- "('Smaragdgatan', '7')"
+	"('Smaragdgatan', '7')" -- "('Smaragdgatan', '1')"
+	"('Opaltorget', '1')" -- "('Opaltorget', '7')"
+	"('Opaltorget', '7')" -- "('Opaltorget', '1')"
+	"('Mölndals Innerstad', '2')" -- "('Mölndals Innerstad', '4')"
+	"('Mölndals Innerstad', '4')" -- "('Mölndals Innerstad', '2')"
+	"('Mölndals sjukhus', '2')" -- "('Mölndals sjukhus', '4')"
+	"('Mölndals sjukhus', '4')" -- "('Mölndals sjukhus', '2')"
+	"('Lackarebäck', '2')" -- "('Lackarebäck', '4')"
+	"('Lackarebäck', '4')" -- "('Lackarebäck', '2')"
+	"('Krokslätts Fabriker', '2')" -- "('Krokslätts Fabriker', '4')"
+	"('Krokslätts Fabriker', '4')" -- "('Krokslätts Fabriker', '2')"
+	"('Krokslätts torg', '2')" -- "('Krokslätts torg', '4')"
+	"('Krokslätts torg', '4')" -- "('Krokslätts torg', '2')"
+	"('Lana', '2')" -- "('Lana', '4')"
+	"('Lana', '4')" -- "('Lana', '2')"
+	"('Varbergsgatan', '2')" -- "('Varbergsgatan', '4')"
+	"('Varbergsgatan', '4')" -- "('Varbergsgatan', '2')"
+	"('Elisedal', '2')" -- "('Elisedal', '4')"
+	"('Elisedal', '4')" -- "('Elisedal', '2')"
+	"('Almedal', '2')" -- "('Almedal', '4')"
+	"('Almedal', '4')" -- "('Almedal', '2')"
+	"('Liseberg Södra', '2')" -- "('Liseberg Södra', '4')"
+	"('Liseberg Södra', '4')" -- "('Liseberg Södra', '2')"
+	"('Korsvägen', '2')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '2')" -- "('Korsvägen', '5')"
+	"('Korsvägen', '2')" -- "('Korsvägen', '6')"
+	"('Korsvägen', '2')" -- "('Korsvägen', '8')"
+	"('Korsvägen', '2')" -- "('Korsvägen', '13')"
+	"('Korsvägen', '4')" -- "('Korsvägen', '2')"
+	"('Korsvägen', '4')" -- "('Korsvägen', '5')"
+	"('Korsvägen', '4')" -- "('Korsvägen', '6')"
+	"('Korsvägen', '4')" -- "('Korsvägen', '8')"
+	"('Korsvägen', '4')" -- "('Korsvägen', '13')"
+	"('Korsvägen', '5')" -- "('Korsvägen', '2')"
+	"('Korsvägen', '5')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '5')" -- "('Korsvägen', '6')"
+	"('Korsvägen', '5')" -- "('Korsvägen', '8')"
+	"('Korsvägen', '5')" -- "('Korsvägen', '13')"
+	"('Korsvägen', '6')" -- "('Korsvägen', '2')"
+	"('Korsvägen', '6')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '6')" -- "('Korsvägen', '5')"
+	"('Korsvägen', '6')" -- "('Korsvägen', '8')"
+	"('Korsvägen', '6')" -- "('Korsvägen', '13')"
+	"('Korsvägen', '8')" -- "('Korsvägen', '2')"
+	"('Korsvägen', '8')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '8')" -- "('Korsvägen', '5')"
+	"('Korsvägen', '8')" -- "('Korsvägen', '6')"
+	"('Korsvägen', '8')" -- "('Korsvägen', '13')"
+	"('Korsvägen', '13')" -- "('Korsvägen', '2')"
+	"('Korsvägen', '13')" -- "('Korsvägen', '4')"
+	"('Korsvägen', '13')" -- "('Korsvägen', '5')"
+	"('Korsvägen', '13')" -- "('Korsvägen', '6')"
+	"('Korsvägen', '13')" -- "('Korsvägen', '8')"
+	"('Scandinavium', '2')" -- "('Scandinavium', '6')"
+	"('Scandinavium', '2')" -- "('Scandinavium', '8')"
+	"('Scandinavium', '2')" -- "('Scandinavium', '13')"
+	"('Scandinavium', '6')" -- "('Scandinavium', '2')"
+	"('Scandinavium', '6')" -- "('Scandinavium', '8')"
+	"('Scandinavium', '6')" -- "('Scandinavium', '13')"
+	"('Scandinavium', '8')" -- "('Scandinavium', '2')"
+	"('Scandinavium', '8')" -- "('Scandinavium', '6')"
+	"('Scandinavium', '8')" -- "('Scandinavium', '13')"
+	"('Scandinavium', '13')" -- "('Scandinavium', '2')"
+	"('Scandinavium', '13')" -- "('Scandinavium', '6')"
+	"('Scandinavium', '13')" -- "('Scandinavium', '8')"
+	"('Ullevi Södra', '2')" -- "('Ullevi Södra', '6')"
+	"('Ullevi Södra', '2')" -- "('Ullevi Södra', '8')"
+	"('Ullevi Södra', '2')" -- "('Ullevi Södra', '13')"
+	"('Ullevi Södra', '6')" -- "('Ullevi Södra', '2')"
+	"('Ullevi Södra', '6')" -- "('Ullevi Södra', '8')"
+	"('Ullevi Södra', '6')" -- "('Ullevi Södra', '13')"
+	"('Ullevi Södra', '8')" -- "('Ullevi Södra', '2')"
+	"('Ullevi Södra', '8')" -- "('Ullevi Södra', '6')"
+	"('Ullevi Södra', '8')" -- "('Ullevi Södra', '13')"
+	"('Ullevi Södra', '13')" -- "('Ullevi Södra', '2')"
+	"('Ullevi Södra', '13')" -- "('Ullevi Södra', '6')"
+	"('Ullevi Södra', '13')" -- "('Ullevi Södra', '8')"
+	"('Domkyrkan', '2')" -- "('Domkyrkan', '6')"
+	"('Domkyrkan', '2')" -- "('Domkyrkan', '11')"
+	"('Domkyrkan', '6')" -- "('Domkyrkan', '2')"
+	"('Domkyrkan', '6')" -- "('Domkyrkan', '11')"
+	"('Domkyrkan', '11')" -- "('Domkyrkan', '2')"
+	"('Domkyrkan', '11')" -- "('Domkyrkan', '6')"
+	"('Grönsakstorget', '2')" -- "('Grönsakstorget', '6')"
+	"('Grönsakstorget', '2')" -- "('Grönsakstorget', '11')"
+	"('Grönsakstorget', '6')" -- "('Grönsakstorget', '2')"
+	"('Grönsakstorget', '6')" -- "('Grönsakstorget', '11')"
+	"('Grönsakstorget', '11')" -- "('Grönsakstorget', '2')"
+	"('Grönsakstorget', '11')" -- "('Grönsakstorget', '6')"
+	"('Vasaplatsen', '2')" -- "('Vasaplatsen', '3')"
+	"('Vasaplatsen', '2')" -- "('Vasaplatsen', '7')"
+	"('Vasaplatsen', '2')" -- "('Vasaplatsen', '10')"
+	"('Vasaplatsen', '3')" -- "('Vasaplatsen', '2')"
+	"('Vasaplatsen', '3')" -- "('Vasaplatsen', '7')"
+	"('Vasaplatsen', '3')" -- "('Vasaplatsen', '10')"
+	"('Vasaplatsen', '7')" -- "('Vasaplatsen', '2')"
+	"('Vasaplatsen', '7')" -- "('Vasaplatsen', '3')"
+	"('Vasaplatsen', '7')" -- "('Vasaplatsen', '10')"
+	"('Vasaplatsen', '10')" -- "('Vasaplatsen', '2')"
+	"('Vasaplatsen', '10')" -- "('Vasaplatsen', '3')"
+	"('Vasaplatsen', '10')" -- "('Vasaplatsen', '7')"
+	"('Vasa Viktoriagatan', '2')" -- "('Vasa Viktoriagatan', '3')"
+	"('Vasa Viktoriagatan', '3')" -- "('Vasa Viktoriagatan', '2')"
+	"('Godhemsgatan', '3')" -- "('Godhemsgatan', '11')"
+	"('Godhemsgatan', '11')" -- "('Godhemsgatan', '3')"
+	"('Mariaplan', '3')" -- "('Mariaplan', '11')"
+	"('Mariaplan', '3')" -- "('Mariaplan', '13')"
+	"('Mariaplan', '11')" -- "('Mariaplan', '3')"
+	"('Mariaplan', '11')" -- "('Mariaplan', '13')"
+	"('Mariaplan', '13')" -- "('Mariaplan', '3')"
+	"('Mariaplan', '13')" -- "('Mariaplan', '11')"
+	"('Ostindiegatan', '3')" -- "('Ostindiegatan', '9')"
+	"('Ostindiegatan', '9')" -- "('Ostindiegatan', '3')"
+	"('Vagnhallen Majorna', '3')" -- "('Vagnhallen Majorna', '9')"
+	"('Vagnhallen Majorna', '9')" -- "('Vagnhallen Majorna', '3')"
+	"('Jaegerdorffsplatsen', '3')" -- "('Jaegerdorffsplatsen', '9')"
+	"('Jaegerdorffsplatsen', '9')" -- "('Jaegerdorffsplatsen', '3')"
+	"('Chapmans Torg', '3')" -- "('Chapmans Torg', '9')"
+	"('Chapmans Torg', '9')" -- "('Chapmans Torg', '3')"
+	"('Kaptensgatan', '3')" -- "('Kaptensgatan', '9')"
+	"('Kaptensgatan', '9')" -- "('Kaptensgatan', '3')"
+	"('Stigbergstorget', '3')" -- "('Stigbergstorget', '9')"
+	"('Stigbergstorget', '3')" -- "('Stigbergstorget', '11')"
+	"('Stigbergstorget', '9')" -- "('Stigbergstorget', '3')"
+	"('Stigbergstorget', '9')" -- "('Stigbergstorget', '11')"
+	"('Stigbergstorget', '11')" -- "('Stigbergstorget', '3')"
+	"('Stigbergstorget', '11')" -- "('Stigbergstorget', '9')"
+	"('Masthuggstorget', '3')" -- "('Masthuggstorget', '9')"
+	"('Masthuggstorget', '3')" -- "('Masthuggstorget', '11')"
+	"('Masthuggstorget', '9')" -- "('Masthuggstorget', '3')"
+	"('Masthuggstorget', '9')" -- "('Masthuggstorget', '11')"
+	"('Masthuggstorget', '11')" -- "('Masthuggstorget', '3')"
+	"('Masthuggstorget', '11')" -- "('Masthuggstorget', '9')"
+	"('Hagakyrkan', '3')" -- "('Hagakyrkan', '6')"
+	"('Hagakyrkan', '3')" -- "('Hagakyrkan', '11')"
+	"('Hagakyrkan', '6')" -- "('Hagakyrkan', '3')"
+	"('Hagakyrkan', '6')" -- "('Hagakyrkan', '11')"
+	"('Hagakyrkan', '11')" -- "('Hagakyrkan', '3')"
+	"('Hagakyrkan', '11')" -- "('Hagakyrkan', '6')"
+	"('Valand', '3')" -- "('Valand', '4')"
+	"('Valand', '3')" -- "('Valand', '5')"
+	"('Valand', '3')" -- "('Valand', '7')"
+	"('Valand', '3')" -- "('Valand', '10')"
+	"('Valand', '4')" -- "('Valand', '3')"
+	"('Valand', '4')" -- "('Valand', '5')"
+	"('Valand', '4')" -- "('Valand', '7')"
+	"('Valand', '4')" -- "('Valand', '10')"
+	"('Valand', '5')" -- "('Valand', '3')"
+	"('Valand', '5')" -- "('Valand', '4')"
+	"('Valand', '5')" -- "('Valand', '7')"
+	"('Valand', '5')" -- "('Valand', '10')"
+	"('Valand', '7')" -- "('Valand', '3')"
+	"('Valand', '7')" -- "('Valand', '4')"
+	"('Valand', '7')" -- "('Valand', '5')"
+	"('Valand', '7')" -- "('Valand', '10')"
+	"('Valand', '10')" -- "('Valand', '3')"
+	"('Valand', '10')" -- "('Valand', '4')"
+	"('Valand', '10')" -- "('Valand', '5')"
+	"('Valand', '10')" -- "('Valand', '7')"
+	"('Kungsportsplatsen', '3')" -- "('Kungsportsplatsen', '4')"
+	"('Kungsportsplatsen', '3')" -- "('Kungsportsplatsen', '5')"
+	"('Kungsportsplatsen', '3')" -- "('Kungsportsplatsen', '7')"
+	"('Kungsportsplatsen', '3')" -- "('Kungsportsplatsen', '10')"
+	"('Kungsportsplatsen', '4')" -- "('Kungsportsplatsen', '3')"
+	"('Kungsportsplatsen', '4')" -- "('Kungsportsplatsen', '5')"
+	"('Kungsportsplatsen', '4')" -- "('Kungsportsplatsen', '7')"
+	"('Kungsportsplatsen', '4')" -- "('Kungsportsplatsen', '10')"
+	"('Kungsportsplatsen', '5')" -- "('Kungsportsplatsen', '3')"
+	"('Kungsportsplatsen', '5')" -- "('Kungsportsplatsen', '4')"
+	"('Kungsportsplatsen', '5')" -- "('Kungsportsplatsen', '7')"
+	"('Kungsportsplatsen', '5')" -- "('Kungsportsplatsen', '10')"
+	"('Kungsportsplatsen', '7')" -- "('Kungsportsplatsen', '3')"
+	"('Kungsportsplatsen', '7')" -- "('Kungsportsplatsen', '4')"
+	"('Kungsportsplatsen', '7')" -- "('Kungsportsplatsen', '5')"
+	"('Kungsportsplatsen', '7')" -- "('Kungsportsplatsen', '10')"
+	"('Kungsportsplatsen', '10')" -- "('Kungsportsplatsen', '3')"
+	"('Kungsportsplatsen', '10')" -- "('Kungsportsplatsen', '4')"
+	"('Kungsportsplatsen', '10')" -- "('Kungsportsplatsen', '5')"
+	"('Kungsportsplatsen', '10')" -- "('Kungsportsplatsen', '7')"
+	"('Solrosgatan', '3')" -- "('Solrosgatan', '5')"
+	"('Solrosgatan', '5')" -- "('Solrosgatan', '3')"
+	"('Sanatoriegatan', '3')" -- "('Sanatoriegatan', '5')"
+	"('Sanatoriegatan', '5')" -- "('Sanatoriegatan', '3')"
+	"('Virginsgatan', '3')" -- "('Virginsgatan', '5')"
+	"('Virginsgatan', '5')" -- "('Virginsgatan', '3')"
+	"('Berzeliigatan', '4')" -- "('Berzeliigatan', '5')"
+	"('Berzeliigatan', '5')" -- "('Berzeliigatan', '4')"
+	"('Gamlestads Torg', '4')" -- "('Gamlestads Torg', '6')"
+	"('Gamlestads Torg', '4')" -- "('Gamlestads Torg', '7')"
+	"('Gamlestads Torg', '4')" -- "('Gamlestads Torg', '8')"
+	"('Gamlestads Torg', '4')" -- "('Gamlestads Torg', '9')"
+	"('Gamlestads Torg', '4')" -- "('Gamlestads Torg', '11')"
+	"('Gamlestads Torg', '6')" -- "('Gamlestads Torg', '4')"
+	"('Gamlestads Torg', '6')" -- "('Gamlestads Torg', '7')"
+	"('Gamlestads Torg', '6')" -- "('Gamlestads Torg', '8')"
+	"('Gamlestads Torg', '6')" -- "('Gamlestads Torg', '9')"
+	"('Gamlestads Torg', '6')" -- "('Gamlestads Torg', '11')"
+	"('Gamlestads Torg', '7')" -- "('Gamlestads Torg', '4')"
+	"('Gamlestads Torg', '7')" -- "('Gamlestads Torg', '6')"
+	"('Gamlestads Torg', '7')" -- "('Gamlestads Torg', '8')"
+	"('Gamlestads Torg', '7')" -- "('Gamlestads Torg', '9')"
+	"('Gamlestads Torg', '7')" -- "('Gamlestads Torg', '11')"
+	"('Gamlestads Torg', '8')" -- "('Gamlestads Torg', '4')"
+	"('Gamlestads Torg', '8')" -- "('Gamlestads Torg', '6')"
+	"('Gamlestads Torg', '8')" -- "('Gamlestads Torg', '7')"
+	"('Gamlestads Torg', '8')" -- "('Gamlestads Torg', '9')"
+	"('Gamlestads Torg', '8')" -- "('Gamlestads Torg', '11')"
+	"('Gamlestads Torg', '9')" -- "('Gamlestads Torg', '4')"
+	"('Gamlestads Torg', '9')" -- "('Gamlestads Torg', '6')"
+	"('Gamlestads Torg', '9')" -- "('Gamlestads Torg', '7')"
+	"('Gamlestads Torg', '9')" -- "('Gamlestads Torg', '8')"
+	"('Gamlestads Torg', '9')" -- "('Gamlestads Torg', '11')"
+	"('Gamlestads Torg', '11')" -- "('Gamlestads Torg', '4')"
+	"('Gamlestads Torg', '11')" -- "('Gamlestads Torg', '6')"
+	"('Gamlestads Torg', '11')" -- "('Gamlestads Torg', '7')"
+	"('Gamlestads Torg', '11')" -- "('Gamlestads Torg', '8')"
+	"('Gamlestads Torg', '11')" -- "('Gamlestads Torg', '9')"
+	"('Hjällbo', '4')" -- "('Hjällbo', '8')"
+	"('Hjällbo', '4')" -- "('Hjällbo', '9')"
+	"('Hjällbo', '8')" -- "('Hjällbo', '4')"
+	"('Hjällbo', '8')" -- "('Hjällbo', '9')"
+	"('Hjällbo', '9')" -- "('Hjällbo', '4')"
+	"('Hjällbo', '9')" -- "('Hjällbo', '8')"
+	"('Hammarkullen', '4')" -- "('Hammarkullen', '8')"
+	"('Hammarkullen', '4')" -- "('Hammarkullen', '9')"
+	"('Hammarkullen', '8')" -- "('Hammarkullen', '4')"
+	"('Hammarkullen', '8')" -- "('Hammarkullen', '9')"
+	"('Hammarkullen', '9')" -- "('Hammarkullen', '4')"
+	"('Hammarkullen', '9')" -- "('Hammarkullen', '8')"
+	"('Storås', '4')" -- "('Storås', '8')"
+	"('Storås', '4')" -- "('Storås', '9')"
+	"('Storås', '8')" -- "('Storås', '4')"
+	"('Storås', '8')" -- "('Storås', '9')"
+	"('Storås', '9')" -- "('Storås', '4')"
+	"('Storås', '9')" -- "('Storås', '8')"
+	"('Angered Centrum', '4')" -- "('Angered Centrum', '8')"
+	"('Angered Centrum', '4')" -- "('Angered Centrum', '9')"
+	"('Angered Centrum', '8')" -- "('Angered Centrum', '4')"
+	"('Angered Centrum', '8')" -- "('Angered Centrum', '9')"
+	"('Angered Centrum', '9')" -- "('Angered Centrum', '4')"
+	"('Angered Centrum', '9')" -- "('Angered Centrum', '8')"
+	"('Lilla Bommen', '5')" -- "('Lilla Bommen', '10')"
+	"('Lilla Bommen', '10')" -- "('Lilla Bommen', '5')"
+	"('Frihamnen', '5')" -- "('Frihamnen', '6')"
+	"('Frihamnen', '5')" -- "('Frihamnen', '10')"
+	"('Frihamnen', '6')" -- "('Frihamnen', '5')"
+	"('Frihamnen', '6')" -- "('Frihamnen', '10')"
+	"('Frihamnen', '10')" -- "('Frihamnen', '5')"
+	"('Frihamnen', '10')" -- "('Frihamnen', '6')"
+	"('Hjalmar Brantingsplatsen', '5')" -- "('Hjalmar Brantingsplatsen', '6')"
+	"('Hjalmar Brantingsplatsen', '5')" -- "('Hjalmar Brantingsplatsen', '10')"
+	"('Hjalmar Brantingsplatsen', '6')" -- "('Hjalmar Brantingsplatsen', '5')"
+	"('Hjalmar Brantingsplatsen', '6')" -- "('Hjalmar Brantingsplatsen', '10')"
+	"('Hjalmar Brantingsplatsen', '10')" -- "('Hjalmar Brantingsplatsen', '5')"
+	"('Hjalmar Brantingsplatsen', '10')" -- "('Hjalmar Brantingsplatsen', '6')"
+	"('Vågmästareplatsen', '5')" -- "('Vågmästareplatsen', '6')"
+	"('Vågmästareplatsen', '5')" -- "('Vågmästareplatsen', '10')"
+	"('Vågmästareplatsen', '6')" -- "('Vågmästareplatsen', '5')"
+	"('Vågmästareplatsen', '6')" -- "('Vågmästareplatsen', '10')"
+	"('Vågmästareplatsen', '10')" -- "('Vågmästareplatsen', '5')"
+	"('Vågmästareplatsen', '10')" -- "('Vågmästareplatsen', '6')"
+	"('Wieselgrensplatsen', '5')" -- "('Wieselgrensplatsen', '6')"
+	"('Wieselgrensplatsen', '5')" -- "('Wieselgrensplatsen', '10')"
+	"('Wieselgrensplatsen', '6')" -- "('Wieselgrensplatsen', '5')"
+	"('Wieselgrensplatsen', '6')" -- "('Wieselgrensplatsen', '10')"
+	"('Wieselgrensplatsen', '10')" -- "('Wieselgrensplatsen', '5')"
+	"('Wieselgrensplatsen', '10')" -- "('Wieselgrensplatsen', '6')"
+	"('Rambergsvallen', '5')" -- "('Rambergsvallen', '6')"
+	"('Rambergsvallen', '5')" -- "('Rambergsvallen', '10')"
+	"('Rambergsvallen', '6')" -- "('Rambergsvallen', '5')"
+	"('Rambergsvallen', '6')" -- "('Rambergsvallen', '10')"
+	"('Rambergsvallen', '10')" -- "('Rambergsvallen', '5')"
+	"('Rambergsvallen', '10')" -- "('Rambergsvallen', '6')"
+	"('Gropegårdsgatan', '5')" -- "('Gropegårdsgatan', '6')"
+	"('Gropegårdsgatan', '5')" -- "('Gropegårdsgatan', '10')"
+	"('Gropegårdsgatan', '6')" -- "('Gropegårdsgatan', '5')"
+	"('Gropegårdsgatan', '6')" -- "('Gropegårdsgatan', '10')"
+	"('Gropegårdsgatan', '10')" -- "('Gropegårdsgatan', '5')"
+	"('Gropegårdsgatan', '10')" -- "('Gropegårdsgatan', '6')"
+	"('Eketrägatan', '5')" -- "('Eketrägatan', '6')"
+	"('Eketrägatan', '5')" -- "('Eketrägatan', '10')"
+	"('Eketrägatan', '6')" -- "('Eketrägatan', '5')"
+	"('Eketrägatan', '6')" -- "('Eketrägatan', '10')"
+	"('Eketrägatan', '10')" -- "('Eketrägatan', '5')"
+	"('Eketrägatan', '10')" -- "('Eketrägatan', '6')"
+	"('Sälöfjordsgatan', '5')" -- "('Sälöfjordsgatan', '6')"
+	"('Sälöfjordsgatan', '5')" -- "('Sälöfjordsgatan', '10')"
+	"('Sälöfjordsgatan', '6')" -- "('Sälöfjordsgatan', '5')"
+	"('Sälöfjordsgatan', '6')" -- "('Sälöfjordsgatan', '10')"
+	"('Sälöfjordsgatan', '10')" -- "('Sälöfjordsgatan', '5')"
+	"('Sälöfjordsgatan', '10')" -- "('Sälöfjordsgatan', '6')"
+	"('Vårväderstorget', '5')" -- "('Vårväderstorget', '6')"
+	"('Vårväderstorget', '5')" -- "('Vårväderstorget', '10')"
+	"('Vårväderstorget', '6')" -- "('Vårväderstorget', '5')"
+	"('Vårväderstorget', '6')" -- "('Vårväderstorget', '10')"
+	"('Vårväderstorget', '10')" -- "('Vårväderstorget', '5')"
+	"('Vårväderstorget', '10')" -- "('Vårväderstorget', '6')"
+	"('Mildvädersgatan', '5')" -- "('Mildvädersgatan', '6')"
+	"('Mildvädersgatan', '5')" -- "('Mildvädersgatan', '10')"
+	"('Mildvädersgatan', '6')" -- "('Mildvädersgatan', '5')"
+	"('Mildvädersgatan', '6')" -- "('Mildvädersgatan', '10')"
+	"('Mildvädersgatan', '10')" -- "('Mildvädersgatan', '5')"
+	"('Mildvädersgatan', '10')" -- "('Mildvädersgatan', '6')"
+	"('Önskevädersgatan', '5')" -- "('Önskevädersgatan', '6')"
+	"('Önskevädersgatan', '5')" -- "('Önskevädersgatan', '10')"
+	"('Önskevädersgatan', '6')" -- "('Önskevädersgatan', '5')"
+	"('Önskevädersgatan', '6')" -- "('Önskevädersgatan', '10')"
+	"('Önskevädersgatan', '10')" -- "('Önskevädersgatan', '5')"
+	"('Önskevädersgatan', '10')" -- "('Önskevädersgatan', '6')"
+	"('Friskväderstorget', '5')" -- "('Friskväderstorget', '6')"
+	"('Friskväderstorget', '5')" -- "('Friskväderstorget', '10')"
+	"('Friskväderstorget', '6')" -- "('Friskväderstorget', '5')"
+	"('Friskväderstorget', '6')" -- "('Friskväderstorget', '10')"
+	"('Friskväderstorget', '10')" -- "('Friskväderstorget', '5')"
+	"('Friskväderstorget', '10')" -- "('Friskväderstorget', '6')"
+	"('Väderilsgatan', '5')" -- "('Väderilsgatan', '6')"
+	"('Väderilsgatan', '5')" -- "('Väderilsgatan', '10')"
+	"('Väderilsgatan', '6')" -- "('Väderilsgatan', '5')"
+	"('Väderilsgatan', '6')" -- "('Väderilsgatan', '10')"
+	"('Väderilsgatan', '10')" -- "('Väderilsgatan', '5')"
+	"('Väderilsgatan', '10')" -- "('Väderilsgatan', '6')"
+	"('Temperaturgatan', '5')" -- "('Temperaturgatan', '6')"
+	"('Temperaturgatan', '6')" -- "('Temperaturgatan', '5')"
+	"('Varmfrontsgatan', '5')" -- "('Varmfrontsgatan', '6')"
+	"('Varmfrontsgatan', '6')" -- "('Varmfrontsgatan', '5')"
+	"('Allhelgonakyrkan', '6')" -- "('Allhelgonakyrkan', '7')"
+	"('Allhelgonakyrkan', '6')" -- "('Allhelgonakyrkan', '11')"
+	"('Allhelgonakyrkan', '7')" -- "('Allhelgonakyrkan', '6')"
+	"('Allhelgonakyrkan', '7')" -- "('Allhelgonakyrkan', '11')"
+	"('Allhelgonakyrkan', '11')" -- "('Allhelgonakyrkan', '6')"
+	"('Allhelgonakyrkan', '11')" -- "('Allhelgonakyrkan', '7')"
+	"('Kortedala Torg', '6')" -- "('Kortedala Torg', '7')"
+	"('Kortedala Torg', '6')" -- "('Kortedala Torg', '11')"
+	"('Kortedala Torg', '7')" -- "('Kortedala Torg', '6')"
+	"('Kortedala Torg', '7')" -- "('Kortedala Torg', '11')"
+	"('Kortedala Torg', '11')" -- "('Kortedala Torg', '6')"
+	"('Kortedala Torg', '11')" -- "('Kortedala Torg', '7')"
+	"('Runstavsgatan', '6')" -- "('Runstavsgatan', '7')"
+	"('Runstavsgatan', '6')" -- "('Runstavsgatan', '11')"
+	"('Runstavsgatan', '7')" -- "('Runstavsgatan', '6')"
+	"('Runstavsgatan', '7')" -- "('Runstavsgatan', '11')"
+	"('Runstavsgatan', '11')" -- "('Runstavsgatan', '6')"
+	"('Runstavsgatan', '11')" -- "('Runstavsgatan', '7')"
+	"('Nymånegatan', '6')" -- "('Nymånegatan', '7')"
+	"('Nymånegatan', '6')" -- "('Nymånegatan', '11')"
+	"('Nymånegatan', '7')" -- "('Nymånegatan', '6')"
+	"('Nymånegatan', '7')" -- "('Nymånegatan', '11')"
+	"('Nymånegatan', '11')" -- "('Nymånegatan', '6')"
+	"('Nymånegatan', '11')" -- "('Nymånegatan', '7')"
+	"('Beväringsgatan', '6')" -- "('Beväringsgatan', '7')"
+	"('Beväringsgatan', '6')" -- "('Beväringsgatan', '11')"
+	"('Beväringsgatan', '7')" -- "('Beväringsgatan', '6')"
+	"('Beväringsgatan', '7')" -- "('Beväringsgatan', '11')"
+	"('Beväringsgatan', '11')" -- "('Beväringsgatan', '6')"
+	"('Beväringsgatan', '11')" -- "('Beväringsgatan', '7')"
+	"('Kviberg', '6')" -- "('Kviberg', '7')"
+	"('Kviberg', '6')" -- "('Kviberg', '11')"
+	"('Kviberg', '7')" -- "('Kviberg', '6')"
+	"('Kviberg', '7')" -- "('Kviberg', '11')"
+	"('Kviberg', '11')" -- "('Kviberg', '6')"
+	"('Kviberg', '11')" -- "('Kviberg', '7')"
+	"('Bellevue', '6')" -- "('Bellevue', '7')"
+	"('Bellevue', '6')" -- "('Bellevue', '11')"
+	"('Bellevue', '7')" -- "('Bellevue', '6')"
+	"('Bellevue', '7')" -- "('Bellevue', '11')"
+	"('Bellevue', '11')" -- "('Bellevue', '6')"
+	"('Bellevue', '11')" -- "('Bellevue', '7')"
+	"('SKF', '6')" -- "('SKF', '7')"
+	"('SKF', '6')" -- "('SKF', '11')"
+	"('SKF', '7')" -- "('SKF', '6')"
+	"('SKF', '7')" -- "('SKF', '11')"
+	"('SKF', '11')" -- "('SKF', '6')"
+	"('SKF', '11')" -- "('SKF', '7')"
+	"('Ejdergatan', '6')" -- "('Ejdergatan', '8')"
+	"('Ejdergatan', '8')" -- "('Ejdergatan', '6')"
+	"('Chalmers', '6')" -- "('Chalmers', '7')"
+	"('Chalmers', '6')" -- "('Chalmers', '8')"
+	"('Chalmers', '6')" -- "('Chalmers', '10')"
+	"('Chalmers', '6')" -- "('Chalmers', '13')"
+	"('Chalmers', '7')" -- "('Chalmers', '6')"
+	"('Chalmers', '7')" -- "('Chalmers', '8')"
+	"('Chalmers', '7')" -- "('Chalmers', '10')"
+	"('Chalmers', '7')" -- "('Chalmers', '13')"
+	"('Chalmers', '8')" -- "('Chalmers', '6')"
+	"('Chalmers', '8')" -- "('Chalmers', '7')"
+	"('Chalmers', '8')" -- "('Chalmers', '10')"
+	"('Chalmers', '8')" -- "('Chalmers', '13')"
+	"('Chalmers', '10')" -- "('Chalmers', '6')"
+	"('Chalmers', '10')" -- "('Chalmers', '7')"
+	"('Chalmers', '10')" -- "('Chalmers', '8')"
+	"('Chalmers', '10')" -- "('Chalmers', '13')"
+	"('Chalmers', '13')" -- "('Chalmers', '6')"
+	"('Chalmers', '13')" -- "('Chalmers', '7')"
+	"('Chalmers', '13')" -- "('Chalmers', '8')"
+	"('Chalmers', '13')" -- "('Chalmers', '10')"
+	"('Wavrinskys Plats', '6')" -- "('Wavrinskys Plats', '7')"
+	"('Wavrinskys Plats', '6')" -- "('Wavrinskys Plats', '8')"
+	"('Wavrinskys Plats', '6')" -- "('Wavrinskys Plats', '10')"
+	"('Wavrinskys Plats', '6')" -- "('Wavrinskys Plats', '13')"
+	"('Wavrinskys Plats', '7')" -- "('Wavrinskys Plats', '6')"
+	"('Wavrinskys Plats', '7')" -- "('Wavrinskys Plats', '8')"
+	"('Wavrinskys Plats', '7')" -- "('Wavrinskys Plats', '10')"
+	"('Wavrinskys Plats', '7')" -- "('Wavrinskys Plats', '13')"
+	"('Wavrinskys Plats', '8')" -- "('Wavrinskys Plats', '6')"
+	"('Wavrinskys Plats', '8')" -- "('Wavrinskys Plats', '7')"
+	"('Wavrinskys Plats', '8')" -- "('Wavrinskys Plats', '10')"
+	"('Wavrinskys Plats', '8')" -- "('Wavrinskys Plats', '13')"
+	"('Wavrinskys Plats', '10')" -- "('Wavrinskys Plats', '6')"
+	"('Wavrinskys Plats', '10')" -- "('Wavrinskys Plats', '7')"
+	"('Wavrinskys Plats', '10')" -- "('Wavrinskys Plats', '8')"
+	"('Wavrinskys Plats', '10')" -- "('Wavrinskys Plats', '13')"
+	"('Wavrinskys Plats', '13')" -- "('Wavrinskys Plats', '6')"
+	"('Wavrinskys Plats', '13')" -- "('Wavrinskys Plats', '7')"
+	"('Wavrinskys Plats', '13')" -- "('Wavrinskys Plats', '8')"
+	"('Wavrinskys Plats', '13')" -- "('Wavrinskys Plats', '10')"
+	"('Medicinaregatan', '6')" -- "('Medicinaregatan', '7')"
+	"('Medicinaregatan', '6')" -- "('Medicinaregatan', '8')"
+	"('Medicinaregatan', '6')" -- "('Medicinaregatan', '13')"
+	"('Medicinaregatan', '7')" -- "('Medicinaregatan', '6')"
+	"('Medicinaregatan', '7')" -- "('Medicinaregatan', '8')"
+	"('Medicinaregatan', '7')" -- "('Medicinaregatan', '13')"
+	"('Medicinaregatan', '8')" -- "('Medicinaregatan', '6')"
+	"('Medicinaregatan', '8')" -- "('Medicinaregatan', '7')"
+	"('Medicinaregatan', '8')" -- "('Medicinaregatan', '13')"
+	"('Medicinaregatan', '13')" -- "('Medicinaregatan', '6')"
+	"('Medicinaregatan', '13')" -- "('Medicinaregatan', '7')"
+	"('Medicinaregatan', '13')" -- "('Medicinaregatan', '8')"
+	"('Sahlgrenska Huvudentré', '6')" -- "('Sahlgrenska Huvudentré', '7')"
+	"('Sahlgrenska Huvudentré', '6')" -- "('Sahlgrenska Huvudentré', '8')"
+	"('Sahlgrenska Huvudentré', '6')" -- "('Sahlgrenska Huvudentré', '13')"
+	"('Sahlgrenska Huvudentré', '7')" -- "('Sahlgrenska Huvudentré', '6')"
+	"('Sahlgrenska Huvudentré', '7')" -- "('Sahlgrenska Huvudentré', '8')"
+	"('Sahlgrenska Huvudentré', '7')" -- "('Sahlgrenska Huvudentré', '13')"
+	"('Sahlgrenska Huvudentré', '8')" -- "('Sahlgrenska Huvudentré', '6')"
+	"('Sahlgrenska Huvudentré', '8')" -- "('Sahlgrenska Huvudentré', '7')"
+	"('Sahlgrenska Huvudentré', '8')" -- "('Sahlgrenska Huvudentré', '13')"
+	"('Sahlgrenska Huvudentré', '13')" -- "('Sahlgrenska Huvudentré', '6')"
+	"('Sahlgrenska Huvudentré', '13')" -- "('Sahlgrenska Huvudentré', '7')"
+	"('Sahlgrenska Huvudentré', '13')" -- "('Sahlgrenska Huvudentré', '8')"
+	"('Komettorget', '7')" -- "('Komettorget', '11')"
+	"('Komettorget', '11')" -- "('Komettorget', '7')"
+	"('Rymdtorget Spårvagn', '7')" -- "('Rymdtorget Spårvagn', '11')"
+	"('Rymdtorget Spårvagn', '11')" -- "('Rymdtorget Spårvagn', '7')"
+	"('Teleskopgatan', '7')" -- "('Teleskopgatan', '11')"
+	"('Teleskopgatan', '11')" -- "('Teleskopgatan', '7')"
+	"('Galileis Gata', '7')" -- "('Galileis Gata', '11')"
+	"('Galileis Gata', '11')" -- "('Galileis Gata', '7')"
+	"('Januarigatan', '7')" -- "('Januarigatan', '11')"
+	"('Januarigatan', '11')" -- "('Januarigatan', '7')"
+	"('Kapellplatsen', '7')" -- "('Kapellplatsen', '10')"
+	"('Kapellplatsen', '10')" -- "('Kapellplatsen', '7')"
+	"('Sannaplan', '9')" -- "('Sannaplan', '11')"
+	"('Sannaplan', '9')" -- "('Sannaplan', '13')"
+	"('Sannaplan', '11')" -- "('Sannaplan', '9')"
+	"('Sannaplan', '11')" -- "('Sannaplan', '13')"
+	"('Sannaplan', '13')" -- "('Sannaplan', '9')"
+	"('Sannaplan', '13')" -- "('Sannaplan', '11')"
+	"('Sandarna', '9')" -- "('Sandarna', '11')"
+	"('Sandarna', '9')" -- "('Sandarna', '13')"
+	"('Sandarna', '11')" -- "('Sandarna', '9')"
+	"('Sandarna', '11')" -- "('Sandarna', '13')"
+	"('Sandarna', '13')" -- "('Sandarna', '9')"
+	"('Sandarna', '13')" -- "('Sandarna', '11')"
+	"('Kungssten', '9')" -- "('Kungssten', '11')"
+	"('Kungssten', '9')" -- "('Kungssten', '13')"
+	"('Kungssten', '11')" -- "('Kungssten', '9')"
+	"('Kungssten', '11')" -- "('Kungssten', '13')"
+	"('Kungssten', '13')" -- "('Kungssten', '9')"
+	"('Kungssten', '13')" -- "('Kungssten', '11')"
+	"('Saltholmen', '11')" -- "('Saltholmen', '13')"
+	"('Saltholmen', '13')" -- "('Saltholmen', '11')"
+	"('Roddföreningen', '11')" -- "('Roddföreningen', '13')"
+	"('Roddföreningen', '13')" -- "('Roddföreningen', '11')"
+	"('Långedrag', '11')" -- "('Långedrag', '13')"
+	"('Långedrag', '13')" -- "('Långedrag', '11')"
+	"('Hinsholmen', '11')" -- "('Hinsholmen', '13')"
+	"('Hinsholmen', '13')" -- "('Hinsholmen', '11')"
+	"('Käringberget', '11')" -- "('Käringberget', '13')"
+	"('Käringberget', '13')" -- "('Käringberget', '11')"
+	"('Tranered', '11')" -- "('Tranered', '13')"
+	"('Tranered', '13')" -- "('Tranered', '11')"
+	"('Hagen', '11')" -- "('Hagen', '13')"
+	"('Hagen', '13')" -- "('Hagen', '11')"
+	"('Nya Varvsallén', '11')" -- "('Nya Varvsallén', '13')"
+	"('Nya Varvsallén', '13')" -- "('Nya Varvsallén', '11')"
+}

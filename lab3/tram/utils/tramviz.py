@@ -3,6 +3,7 @@
 from .trams import readTramNetwork
 from .trams import w_time_to_distance
 from .graphs import dijkstra
+from .graphs import *
 import graphviz
 import json
 import os
@@ -95,26 +96,39 @@ def show_shortest(dep, dest):
     network_distance = readTramNetwork()
     w_time_to_distance(network_distance)
     
+    print(type(network_time.edges()[0][0][0]))
     
+
     # BONUS PART 1
     vertices = []
-    for stop in network_time._stopdict:
-        lines = stop.get_lines()
+    for stop in network_time._stopdict.values(): #tramstop-objekt
+        lines = stop.get_lines() 
         for line in lines:
-            vertices.append((stop, line))
+            vertices.append((stop.get_name(), line))
     
     edgelist = []
     for edge in network_time.edges():
-        if edge[0] in edge[0].get_lines() and edge[1] in edge[1].get_lines():
-            edgelist.append(())
+        for line in network_time._stopdict[edge[0]].get_lines():
+            if line in network_time._stopdict[edge[1]].get_lines():
+                edgelist.append(((edge[0], line), (edge[1], line)))
+       
+    for i in range(len(vertices)):
+        for j in range(len(vertices)):
+            if vertices[i][0] == vertices[j][0] and vertices[i][1] != vertices[j][1]:
+                edgelist.append(((vertices[i]), vertices[j]))
+            
+    extra_graph_time = WeightedGraph(edgelist)
+    extra_graph_distance = WeightedGraph(edgelist)
+    for i in range(len(edgelist)):
+        if edgelist[i][0][0] == edgelist[i][1][0] and edgelist[i][0][1] != edgelist[i][1][1]:
+            # add 20 meters resp 10 minutes
+            extra_graph_time.set_weight(edgelist[i][0], edgelist[i][1], 10)
+            extra_graph_distance.set_weight(edgelist[i][0], edgelist[i][1], 20)
         
-    
-    extra_graph = WeightedGraph(edgelist)
-    
-    
-    
-    
-
+        else:
+            extra_graph_time.set_weight(edgelist[i][0], edgelist[i][1], network_time.get_weight(edgelist[i][0][0], edgelist[i][1][0]))
+            extra_graph_distance.set_weight(edgelist[i][0], edgelist[i][1], network_distance.get_weight(edgelist[i][0][0], edgelist[i][1][0]))
+  
     
     print(network_time.get_weight('Chalmers', 'Kapellplatsen'))
     print(network_distance.get_weight('Chalmers', 'Kapellplatsen'))
@@ -131,14 +145,21 @@ def show_shortest(dep, dest):
     #cyan for stops that are on both paths
     
     #TIME NETWORK
-    
-    quickest_path = dijkstra(network_time, dep)[dest]
-    quickest_path.append(dest)
+#    quickest_path = dijkstra(network_time, dep)[dest]
+#    quickest_path.append(dest)
     
     
     #DISTANCE NETWORK
-    shortest_path = dijkstra(network_distance, dep)[dest]
-    shortest_path.append(dest)
+#    shortest_path = dijkstra(network_distance, dep)[dest]
+#    shortest_path.append(dest)
+    
+    
+    #TIME NETWORK WITH BONUS 1
+    quickest_path = view_shortest(extra_graph_time, dep, dest)
+    
+    #DISTANCE NETWORK WITH BONUS 1
+    shortest_path = view_shortest(extra_graph_distance, dep, dest)
+
     
     
     # COLORS
