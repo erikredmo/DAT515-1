@@ -182,6 +182,7 @@ class WeightedGraph(Graph):
 def dijkstra(graph, source, cost=lambda u,v: 1):
     visited = []
     shortest_from_source_dict = {}
+    shortest_to_show_dict = {}
     path = {}
     for vertex in graph.vertices():
         shortest_from_source_dict[vertex] = float('inf')
@@ -191,43 +192,43 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
 
     def dijkstraloop(source):
         should_do_loop = True
-        hej = graph._redadjlist
-        #print(hej)
-        for stop in graph._redadjlist:
-            #print(stop)
-            if stop[0] == source:
-                #print(stop)
-                for neighbour in graph._redadjlist[stop]:
-                    if neighbour not in visited:
-                        if type(graph) == WeightedGraph:
-                            neighbour_cost = shortest_from_source_dict[stop] + graph.get_weight(stop, neighbour)
-                        else:
-                            neighbour_cost = shortest_from_source_dict[stop] + cost(stop, neighbour)
-                        if neighbour_cost < shortest_from_source_dict[neighbour]:
-                            shortest_from_source_dict[neighbour] = neighbour_cost
-                            prev_path = path[stop]
-                            path[neighbour] = []
-                            if prev_path == []:
-                                path[neighbour].append(stop[0])
-                            elif prev_path == path[neighbour]:
-                                #print(prev_path)
-                                path[neighbour].append(stop[0])
-                            else:
-                                for prev in prev_path:
-                                    path[neighbour].append(prev)
-                                path[neighbour].append(stop[0])
-                        else:
-                            continue
+        if len(visited) == 0:
+            for stop in graph._redadjlist:
+                if stop[0] == source and stop not in visited:
+                    source = stop
+                
+        for neighbour in graph._redadjlist[source]:
+            if neighbour not in visited:
+                if type(graph) == WeightedGraph:
+                    neighbour_cost = shortest_from_source_dict[source] + graph.get_weight(source, neighbour)
+                else:
+                    neighbour_cost = shortest_from_source_dict[source] + cost(source, neighbour)
+                if neighbour_cost < shortest_from_source_dict[neighbour]:
+                    shortest_from_source_dict[neighbour] = neighbour_cost
+                    prev_path = path[source]
+                    path[neighbour] = []
+                    if prev_path == []:
+                        path[neighbour].append(source)
+                    elif prev_path == path[neighbour]:
+                        #print(prev_path)
+                        path[neighbour].append(source)
                     else:
-                        continue
+                        for prev in prev_path:
+                            path[neighbour].append(prev)
+                        path[neighbour].append(source)
+                else:
+                    continue
+            else:
+                continue
 
-        visited.append(stop)
+        visited.append(source)
  
         if len(visited) == len(graph.vertices()):
             should_do_loop = False
-            return path
+            return path, shortest_to_show_dict
         else:
-            shortest_from_source_dict.pop(stop, None)
+            shortest_to_show_dict.update({source: shortest_from_source_dict.pop(source, None)})
+            shortest_from_source_dict.pop(source, None)
             min_value_index = list(shortest_from_source_dict.values()).index(min(shortest_from_source_dict.values()))
             min_from_source = list(shortest_from_source_dict.keys())[min_value_index]
             if should_do_loop == True:
@@ -237,17 +238,34 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
 
 
 def view_shortest(graph, source, target):
-    path = dijkstra(graph, source)
-    print('PATH: ', path)
-    for stop in path.keys(): #dict med keys är tuplar av stationer och deras values är listor med tuplar som är stationerna mellan source och den keyn
+    dijk = dijkstra(graph, source)
+    path = dijk[0]
+    cost = dijk[1]
+    
+    for stop in path.keys():
         if stop[0] == target:
-            #for stop2 in stop:
-            #    path_to_show = path[stop2[0]]
-            path_to_show = path[stop]
-    path_to_show.append(target)
-#    colormap = {str(v): 'orange' for v in path}
-#    visualize(graph, view='view', nodecolors=colormap, view_shortest=True)
-    return path_to_show
+            path_to_change = path[stop]
+    path_to_show = []
+    for station in path_to_change:
+        if len(path_to_show) == 0:
+            path_to_show.append('Go with tram number: ' + station[1])
+            path_to_show.append(station[0])
+        elif station[0] in path_to_show:
+            path_to_show.append(' Change to tram number: ' + station[1])
+            path_to_show.append(station[0])
+        else: 
+            path_to_show.append(station[0])
+    if path_to_show[-1] != target:
+        path_to_show.append(target)
+    if type(cost[path_to_change[-1]]) == int:
+        path_to_show.append(str(round(cost[path_to_change[-1]])))
+        path_to_show.append(' min')
+        
+    else:
+        path_to_show.append(str(round(cost[path_to_change[-1]])/1000))
+        path_to_show.append(' km')
+    
+    return path_to_show, ', '.join(path_to_show)
 
 import graphviz
 

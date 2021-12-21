@@ -36,23 +36,73 @@ def scaled_position(network):
     return lambda xy: (x_factor*(xy[0]-minlon), y_factor*(xy[1]-minlat))
 
 # Bonus task 2: redefine this so that it returns the actual traffic information
-import urllib.parse
-def stop_url(stop):
-    google_url = 'https://www.google.com/search'
-    attrs = urllib.parse.urlencode({'q': 'Gothenburg ' + stop.get_name()})
-    return google_url + '?' + attrs
+
+from bs4 import BeautifulSoup
+import requests
+
+def stop_url_list(network):
+
+    source = requests.get('https://www.vasttrafik.se/reseplanering/hallplatslista/').text
+    soup = BeautifulSoup(source, 'html.parser')
+    
+    gids = []
+    stops_added = []
+    for item in soup.find_all('li', class_="mb-1"):
+        item_text = item.a.text.split()
+        if type(item_text[0][0]) == int:
+            continue
+        for i in range(len(item_text)):
+            item_text[i] = item_text[i].strip(',')
+        
+        if len(item_text) > 4:
+            new_stop = ''
+            for i in range(len(item_text)-3):
+                new_stop = new_stop + item_text[i] + ' '
+            item_text[0] = new_stop[:-1]
+            item_text = item_text[:1] + item_text[-3:]
+        
+        for stop in network._stopdict.keys():
+            #göteborg adderas före mölndal pga G kmr före M
+            if stop in item_text and ('Göteborg' in item_text or 'Mölndal' in item_text) and stop not in stops_added:
+                stops_added.append(stop)
+                gids.append((stop, item.find('a').get('href')[-17:-1]))
+        
+        
+        urls = []
+        url_beginning = 'https://avgangstavla.vasttrafik.se/?source=vasttrafikse-stopareadetailspage&stopAreaGid='
+        for gid in gids:
+            url_full = url_beginning + gid[1]
+            urls.append((gid[0], url_full))
+        
+    return urls
+
+
+
+def stop_url(stop, urls):
+    for url in urls:
+        if url[0] == stop:
+            print(url[1])
+            return url[1]
+
+    
+#    google_url = 'https://www.google.com/search'
+#    attrs = urllib.parse.urlencode({'q': 'Gothenburg ' + stop.get_name()})
+#    return google_url + '?' + attrs
 
 
 # You don't probably need to change this
 
 def network_graphviz(network, outfile, colors=None, positions=scaled_position):
     dot = graphviz.Graph(engine='fdp', graph_attr={'size': '12,12'})
+    
+    url_list = stop_url_list(network)
+    print(url_list)
 
     for stop in network.all_stops(): # går igenom alla stop objects
         
-        x, y = stop.get_position() # go to a stop object
+        y, x = stop.get_position() # go to a stop object
         if positions:
-            x, y = positions(network)((x, y))
+            x, y = positions(network)((x, y)) 
         pos_x, pos_y = str(x), str(y)
         
         if colors:
@@ -60,9 +110,9 @@ def network_graphviz(network, outfile, colors=None, positions=scaled_position):
         else:
             col = 'white'
             
-        dot.node(stop.get_name(), label=stop.get_name(), shape='rectangle', pos=pos_x + ',' + pos_y +'!',
+        dot.node(stop.get_name(), label=stop.get_name(), shape='rectangle', pos=pos_x + ',' + pos_y,
             fontsize='8pt', width='0.4', height='0.05',
-            URL=stop_url(stop),
+            URL=stop_url(stop.get_name(), url_list),
             fillcolor=col, style='filled')
         
     for line in network.all_lines():
@@ -70,24 +120,14 @@ def network_graphviz(network, outfile, colors=None, positions=scaled_position):
         for i in range(len(stops)-1):
             dot.edge(stops[i], stops[i+1],
                          color=gbg_linecolors[int(line)], penwidth=str(2))
+            
 
     dot.format = 'svg'
     s = dot.pipe().decode('utf-8')
     with open(outfile, 'w') as file:
         file.write(s)
+        
 
-
-'''
-from bs4 import BeautifulSoup
-import urllib.request
-
-def extracting_gids():
-    with open('hallplatslista.html') as fp:
-        soup = BeautifulSoup(fp, 'html.parser')
-    
-    data = soup.find_all('li', { 'class':'mb-1'})
-    numbers = [d.text for d in data]
-'''
     
 
 def show_shortest(dep, dest):
@@ -130,29 +170,12 @@ def show_shortest(dep, dest):
             extra_graph_distance.set_weight(edgelist[i][0], edgelist[i][1], network_distance.get_weight(edgelist[i][0][0], edgelist[i][1][0]))
   
     
-    print(network_time.get_weight('Chalmers', 'Kapellplatsen'))
-    print(network_distance.get_weight('Chalmers', 'Kapellplatsen'))
-    
 
     # TODO: replace this mock-up with actual computation using dijkstra
     quickest_path = 'The quickest route from ' + dep + ' to ' + dest
     shortest_path = 'The shortest route from ' + dep + ' to ' + dest
 
-    # TODO: run this with the shortest-path colors to update the svg image
-    
-    #green for stops on the shortest path
-    #orange for stops on quickest path
-    #cyan for stops that are on both paths
-    
-    #TIME NETWORK
-#    quickest_path = dijkstra(network_time, dep)[dest]
-#    quickest_path.append(dest)
-    
-    
-    #DISTANCE NETWORK
-#    shortest_path = dijkstra(network_distance, dep)[dest]
-#    shortest_path.append(dest)
-    
+
     
     #TIME NETWORK WITH BONUS 1
     quickest_path = view_shortest(extra_graph_time, dep, dest)
@@ -161,26 +184,27 @@ def show_shortest(dep, dest):
     shortest_path = view_shortest(extra_graph_distance, dep, dest)
 
     
-    
     # COLORS
-    
+    # TODO: run this with the shortest-path colors to update the svg image
+    #green for stops on the shortest path
+    #orange for stops on quickest path
+    #cyan for stops that are on both paths
     def colors(stop):
+        #print(stop)
+#        print(shortest_path)
         color = 'white'
-        if stop in shortest_path:
+        if stop in shortest_path[0]:
             color = 'orange'
         
-        if stop in quickest_path:
+        if stop in quickest_path[0]:
             color = 'green'
             
-        if stop in quickest_path and stop in shortest_path:
+        if stop in quickest_path[0] and stop in shortest_path[0]:
             color = 'cyan'
         return color
     
-    
+
     network_graphviz(network_time, SHORTEST_PATH_SVG, colors=colors)
     
-    #parameter colors in network_graphviz should be a function that we create which returns the correct color for each stop
-    
-    return quickest_path, shortest_path
-
+    return quickest_path[1], shortest_path[1]
 
