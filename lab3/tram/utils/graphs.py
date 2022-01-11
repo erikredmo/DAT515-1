@@ -181,9 +181,9 @@ class WeightedGraph(Graph):
 
 def dijkstra(graph, source, cost=lambda u,v: 1):
     visited = []
-    shortest_from_source_dict = {}
-    shortest_to_show_dict = {}
-    path = {}
+    shortest_from_source_dict = {} #keys är hållplatser, values är kortaste sträckan
+    shortest_to_show_dict = {} #den som ska printas
+    path = {} #aktuella vägen, dictionary med alla hållplatser som keys, values är hållplatspathen dvs lista med vägen från source till key-hållplatsen
     for vertex in graph.vertices():
         shortest_from_source_dict[vertex] = float('inf')
         path[vertex] = []
@@ -202,7 +202,7 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
                 if type(graph) == WeightedGraph:
                     neighbour_cost = shortest_from_source_dict[source] + graph.get_weight(source, neighbour)
                 else:
-                    neighbour_cost = shortest_from_source_dict[source] + cost(source, neighbour)
+                    neighbour_cost = shortest_from_source_dict[source] + cost(source, neighbour) #om grafen inte är viktad sätts alla costs till 1 
                 if neighbour_cost < shortest_from_source_dict[neighbour]:
                     shortest_from_source_dict[neighbour] = neighbour_cost
                     prev_path = path[source]
@@ -221,15 +221,15 @@ def dijkstra(graph, source, cost=lambda u,v: 1):
             else:
                 continue
 
-        visited.append(source)
+        visited.append(source) #när vi har gått igenom alla sources grannar
  
         if len(visited) == len(graph.vertices()):
             should_do_loop = False
             return path, shortest_to_show_dict
         else:
-            shortest_to_show_dict.update({source: shortest_from_source_dict.pop(source, None)})
+            shortest_to_show_dict.update({source: shortest_from_source_dict.pop(source, None)}) #pop returnerar
             shortest_from_source_dict.pop(source, None)
-            min_value_index = list(shortest_from_source_dict.values()).index(min(shortest_from_source_dict.values()))
+            min_value_index = list(shortest_from_source_dict.values()).index(min(shortest_from_source_dict.values())) #vilken granne som är närmast/snabbast
             min_from_source = list(shortest_from_source_dict.keys())[min_value_index]
             if should_do_loop == True:
                 return dijkstraloop(min_from_source)
@@ -259,11 +259,9 @@ def view_shortest(graph, source, target):
         path_to_show.append(target)
     if type(cost[path_to_change[-1]]) == int:
         path_to_show.append(str(round(cost[path_to_change[-1]])))
-        path_to_show.append(' min')
         
     else:
         path_to_show.append(str(round(cost[path_to_change[-1]])/1000))
-        path_to_show.append(' km')
     
     return path_to_show, ', '.join(path_to_show)
 
